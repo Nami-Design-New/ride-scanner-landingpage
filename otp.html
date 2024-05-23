@@ -5,7 +5,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no"
     />
-    <title>Ride Scanner</title>
+    <title>Ride Scanner | otp</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/imgs/fav.svg" />
     <!-- required css -->
@@ -59,31 +59,54 @@
     <main class="content">
       <!-- careers form -->
       <div class="banner">
-        <h1>Careers</h1>
+        <h1>OTP Code</h1>
       </div>
-      <section class="careersForm">
+      <section class="careersForm otpForm">
         <div class="container">
           <div class="row">
             <div class="col-sm-10 col-md-8 col-lg-6 m-auto">
               <h1 class="title">Be part of our mission</h1>
-              <form action="">
-                <div>
-                  <label for=""> Full Name * </label>
-                  <input type="text" name="" id="" class="form-control" />
+              <!-- if this form opened from forget password, action will be reset-password.html -->
+              <!-- if this form opened from register, action will complete-register.html -->
+              <form action="complete-register.html">
+                <div class="otpCodesContainer">
+                  <input
+                    type="text"
+                    name="otpCodeChar1"
+                    id="otpCodeChar1Input"
+                    placeholder="-"
+                    maxlength="1"
+                  />
+                  <input
+                    type="text"
+                    name="otpCodeChar2"
+                    id="otpCodeChar2Input"
+                    placeholder="-"
+                    maxlength="1"
+                  />
+                  <input
+                    type="text"
+                    name="otpCodeChar3"
+                    id="otpCodeChar3Input"
+                    placeholder="-"
+                    maxlength="1"
+                  />
+                  <input
+                    type="text"
+                    name="otpCodeChar4"
+                    id="otpCodeChar4Input"
+                    placeholder="-"
+                    maxlength="1"
+                  />
+                  <input
+                    type="text"
+                    name="otpCodeChar5"
+                    id="otpCodeChar5Input"
+                    placeholder="-"
+                    maxlength="1"
+                  />
                 </div>
-                <div>
-                  <label for=""> E-Mail Address * </label>
-                  <input type="email" name="" id="" class="form-control" />
-                </div>
-                <div>
-                  <label for=""> Phone Number * </label>
-                  <input type="tel" name="" id="" class="form-control" />
-                </div>
-                <div>
-                  <label for=""> Photo, Document Or PDF * </label>
-                  <input type="file" name="" id="" class="filepond-multiple" />
-                </div>
-                <button type="submit" class="send">send</button>
+                <button type="submit" class="send">Verify</button>
               </form>
             </div>
           </div>
@@ -134,11 +157,4 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filepond.min.js"></script>
   <script src="assets/js/app.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".filepond-multiple").filepond({
-        allowMultiple: true,
-      });
-    });
-  </script>
 </html>

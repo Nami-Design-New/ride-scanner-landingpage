@@ -1,336 +1,412 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no">
-    <title> Ride Scanner </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no"
+    />
+    <title>Ride Scanner</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/imgs/fav.svg">
+    <link rel="shortcut icon" href="assets/imgs/fav.svg" />
     <!-- required css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/filepond.min.css">
-    <link rel="stylesheet" href="assets/css/styleEn.css">
-</head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/filepond.min.css" />
+    <link rel="stylesheet" href="assets/css/styleEn.css" />
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <nav class="header">
-        <div class="container d-flex align-items-center justify-content-between">
-            <div class="logo">
-                <a href="index.html"><img src="assets/imgs/logo.svg"></a>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li class="nav-link">
-                        <a class="home active" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="how-it-works" href="index.html#how-it-works">How it works</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="about" href="index.html#about">About Us</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="contact-us" href="index.html#contact-us">Contact Us</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="careers.html">Careers</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btns d-flex gap-3">
-                <button class="language btn">
-                    AR
-                </button>
-                <button class="btn toogler">
-                    <i class="fa-sharp fa-solid fa-bars"></i>
-                </button>
-            </div>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
         </div>
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link">
+              <a class="home active" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-link">
+              <a class="how-it-works" href="index.html#how-it-works"
+                >How it works</a
+              >
+            </li>
+            <li class="nav-link">
+              <a class="about" href="index.html#about">About Us</a>
+            </li>
+            <li class="nav-link">
+              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-link">
+              <a href="careers.html">Careers</a>
+            </li>
+            <li class="nav-link">
+              <a href="register.html">Company Account</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns d-flex gap-3">
+          <button class="language btn">AR</button>
+          <button class="btn toogler">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </nav>
     <!-- main-wrapper -->
     <main class="content">
-        <!-- hero section -->
-        <section id="home" class="hero-section sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
-                        <div class="content-wrap">
-                            <h1 data-aos="fade-up">
-                                Unlock Effortless Transportation with Ride-Scanner
-                            </h1>
-                            <p data-aos="fade-up">
-                                download the app now and get lowest price for your trip...!
-                            </p>
-                            <div class="btns" data-aos="fade-up">
-                                <a href="#!">
-                                    <img src="assets/imgs/app-store.svg" alt="app-store">
-                                </a>
-                                <a href="#!">
-                                    <img src="assets/imgs/google-play.svg" alt="google-play">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="mockup">
-                            <img src="assets/imgs/mouckup-sp.svg" data-aos="fade-up" alt="mouckup">
-                            <img src="assets/imgs/mouckup-sp2.svg" data-aos="fade-up" alt="mouckup">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="how-it-works" class="how sec">
-            <div class="container">
-                <div class="sectionTitle pe-2 ps-2">
-                    <h2 data-aos="fade-up">How ride scanner work?</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>1</h3>
-                                </div>
-                                <h6>Search for Your Ride:</h6>
-                            </div>
-                            <p>
-                                Enter your location and destination, and Ride-Scanner finds top ride-hailing options
-                                nearby.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>2</h3>
-                                </div>
-                                <h6>Compare and Choose:</h6>
-                            </div>
-                            <p>
-                                Explore ride options with prices, vehicle details, and reviews to make an informed
-                                choice.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>3</h3>
-                                </div>
-                                <h6>Book Your Ride:</h6>
-                            </div>
-                            <p>
-                                Tap to book your ideal ride and get instant confirmation with trip details.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>4</h3>
-                                </div>
-                                <h6> Enjoy Your Journey:</h6>
-                            </div>
-                            <p>
-                                Relax and enjoy your ride while tracking your driver in real-time for added convenience.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>5</h3>
-                                </div>
-                                <h6>Rate and Review:</h6>
-                            </div>
-                            <p>
-                                Rate and review your trip to help maintain service quality.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>6</h3>
-                                </div>
-                                <h6>Payment Made Easy:</h6>
-                            </div>
-                            <p>
-                                Pay conveniently in-app, no cash required – safe and hassle-free.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 p-2" data-aos="fade-up" data-aos-duration="500">
-                        <div class="how-card">
-                            <div class="d-flex flex-column justify-content-center  gap-3">
-                                <div class="icon">
-                                    <h3>7</h3>
-                                </div>
-                                <h6>Discover More:</h6>
-                            </div>
-                            <p>
-                                Discover more in-app features: ride history, favorite drivers, and loyalty rewards
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- statics -->
-        <section class="statics">
-            <div id="about" class="container sec my-5">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="about-description" data-aos="fade-down">
-                            <h2>
-                                Ride-Scanner is not just a ride-finding app; it's a revolution 💥
-                            </h2>
-                            <h6>
-                                About Us 🌟
-                            </h6>
-                            <p>
-                                Welcome to Ride-Scanner, the ultimate search engine for all your ride-hailing needs. We
-                                understand the importance of finding the best transportation options quickly and
-                                efficiently, and that's why we've created a platform that seamlessly links you to
-                                popular ride-hailing applications.
-                            </p>
-                            <h6>
-                                Our Vision 🚀
-                            </h6>
-                            <p>
-                                Revolutionizing transportation through a seamless and efficient ride-finding experience.
-                            </p>
-                            <h6>
-                                Our Mission ✨
-                            </h6>
-                            <p>
-                                Providing riders with affordable and timely transportation options, revolutionizing
-                                ride-hailing service by making it faster, and more enjoyable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
-                        <div data-aos="fade-up">
-                            <div class="img">
-                                <img class="image" src="assets/imgs/about.jpeg" alt="">
-                                <div class="thumb">
-                                    <img src="assets/imgs/save.svg" alt="">
-                                    <h6>Download the app now and save your money🚀</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="features sec" id="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-12 p-lg-4 p-2">
-                            <div class="statics-card" data-aos="fade-up">
-                                <img src="assets/imgs/Cross-Screen Compatibility.svg" alt="star">
-                                <div class="d-flex align-content-center gap-2">
-                                    <h4>Cross-Screen Compatibility</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-lg-4 p-2">
-                            <div class="statics-card" data-aos="fade-up">
-                                <img src="assets/imgs/speedy.svg" alt="driver">
-                                <div class="d-flex align-content-center gap-2">
-                                    <h4>Quick and Efficient App</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 p-lg-4 p-2">
-                            <div class="statics-card" data-aos="fade-up">
-                                <img src="assets/imgs/app.svg" alt="Ride Completion">
-                                <div class="d-flex align-content-center gap-2">
-                                    <h4>User-friendly app</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact-us section -->
-        <section class="contact-us sec" id="contact-us">
-            <div class="sectionTitle">
-                <h2 data-aos="fade-up"> Contact Us </h2>
-                <p class="text-center" data-aos="fade-up">
-                    A full support team is at your service, do not hesitate to inquire about anything
+      <!-- hero section -->
+      <section id="home" class="hero-section sec">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+            >
+              <div class="content-wrap">
+                <h1 data-aos="fade-up">
+                  Unlock Effortless Transportation with Ride-Scanner
+                </h1>
+                <p data-aos="fade-up">
+                  download the app now and get lowest price for your trip...!
                 </p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <form action="" data-aos="fade-up">
-                            <input type="text" placeholder="Full Name" name="name" id="name">
-                            <input type="email" placeholder="Email Address" name="email" id="email">
-                            <input type="text" placeholder="Subject" name="subject" id="subject">
-                            <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-                            <button type="submit">send</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-6 col-12 map-area" style="height: 450px;" data-aos="fade-up">
-                        <div class="img w-100">
-                            <img src="assets/imgs/dots.svg" alt="">
-                        </div>
-                    </div>
+                <div class="btns" data-aos="fade-up">
+                  <a href="#!">
+                    <img src="assets/imgs/app-store.svg" alt="app-store" />
+                  </a>
+                  <a href="#!">
+                    <img src="assets/imgs/google-play.svg" alt="google-play" />
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-6 col-12">
+              <div class="mockup">
+                <img
+                  src="assets/imgs/mouckup-sp.svg"
+                  data-aos="fade-up"
+                  alt="mouckup"
+                />
+                <img
+                  src="assets/imgs/mouckup-sp2.svg"
+                  data-aos="fade-up"
+                  alt="mouckup"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="how sec">
+        <div class="container">
+          <div class="sectionTitle pe-2 ps-2">
+            <h2 data-aos="fade-up">How ride scanner work?</h2>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>1</h3>
+                  </div>
+                  <h6>Search for Your Ride:</h6>
+                </div>
+                <p>
+                  Enter your location and destination, and Ride-Scanner finds
+                  top ride-hailing options nearby.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>2</h3>
+                  </div>
+                  <h6>Compare and Choose:</h6>
+                </div>
+                <p>
+                  Explore ride options with prices, vehicle details, and reviews
+                  to make an informed choice.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>3</h3>
+                  </div>
+                  <h6>Book Your Ride:</h6>
+                </div>
+                <p>
+                  Tap to book your ideal ride and get instant confirmation with
+                  trip details.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>4</h3>
+                  </div>
+                  <h6>Enjoy Your Journey:</h6>
+                </div>
+                <p>
+                  Relax and enjoy your ride while tracking your driver in
+                  real-time for added convenience.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>5</h3>
+                  </div>
+                  <h6>Rate and Review:</h6>
+                </div>
+                <p>
+                  Rate and review your trip to help maintain service quality.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>6</h3>
+                  </div>
+                  <h6>Payment Made Easy:</h6>
+                </div>
+                <p>
+                  Pay conveniently in-app, no cash required – safe and
+                  hassle-free.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-4 col-6 p-2"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="how-card">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                  <div class="icon">
+                    <h3>7</h3>
+                  </div>
+                  <h6>Discover More:</h6>
+                </div>
+                <p>
+                  Discover more in-app features: ride history, favorite drivers,
+                  and loyalty rewards
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- statics -->
+      <section class="statics">
+        <div id="about" class="container sec my-5">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="about-description" data-aos="fade-down">
+                <h2>
+                  Ride-Scanner is not just a ride-finding app; it's a revolution
+                  💥
+                </h2>
+                <h6>About Us 🌟</h6>
+                <p>
+                  Welcome to Ride-Scanner, the ultimate search engine for all
+                  your ride-hailing needs. We understand the importance of
+                  finding the best transportation options quickly and
+                  efficiently, and that's why we've created a platform that
+                  seamlessly links you to popular ride-hailing applications.
+                </p>
+                <h6>Our Vision 🚀</h6>
+                <p>
+                  Revolutionizing transportation through a seamless and
+                  efficient ride-finding experience.
+                </p>
+                <h6>Our Mission ✨</h6>
+                <p>
+                  Providing riders with affordable and timely transportation
+                  options, revolutionizing ride-hailing service by making it
+                  faster, and more enjoyable.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+            >
+              <div data-aos="fade-up">
+                <div class="img">
+                  <img class="image" src="assets/imgs/about.jpeg" alt="" />
+                  <div class="thumb">
+                    <img src="assets/imgs/save.svg" alt="" />
+                    <h6>Download the app now and save your money🚀</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features sec" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-12 p-lg-4 p-2">
+                <div class="statics-card" data-aos="fade-up">
+                  <img
+                    src="assets/imgs/Cross-Screen Compatibility.svg"
+                    alt="star"
+                  />
+                  <div class="d-flex align-content-center gap-2">
+                    <h4>Cross-Screen Compatibility</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-lg-4 p-2">
+                <div class="statics-card" data-aos="fade-up">
+                  <img src="assets/imgs/speedy.svg" alt="driver" />
+                  <div class="d-flex align-content-center gap-2">
+                    <h4>Quick and Efficient App</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 p-lg-4 p-2">
+                <div class="statics-card" data-aos="fade-up">
+                  <img src="assets/imgs/app.svg" alt="Ride Completion" />
+                  <div class="d-flex align-content-center gap-2">
+                    <h4>User-friendly app</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact-us section -->
+      <section class="contact-us sec" id="contact-us">
+        <div class="sectionTitle">
+          <h2 data-aos="fade-up">Contact Us</h2>
+          <p class="text-center" data-aos="fade-up">
+            A full support team is at your service, do not hesitate to inquire
+            about anything
+          </p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <form action="" data-aos="fade-up">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  name="name"
+                  id="name"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  id="email"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="4"
+                ></textarea>
+                <button type="submit">send</button>
+              </form>
+            </div>
+            <div
+              class="col-lg-6 col-12 map-area"
+              style="height: 450px"
+              data-aos="fade-up"
+            >
+              <div class="img w-100">
+                <img src="assets/imgs/dots.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 flex-lg-row flex-column  d-flex justify-content-between align-items-center footer">
-                    <a class="logo" href="index.html">
-                        <img src="assets/imgs/logo.svg" alt="logo">
-                    </a>
-                    <div class="copy d-flex gap-1">
-                        <p>Copyright © 2023 Ride Scanner - </p> 
-                        <a href="privacy-policy.html">Privacy & Policy</a>
-                    </div>
-                    <ul class="social">
-                        <li>
-                            <a href="#!">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+          >
+            <a class="logo" href="index.html">
+              <img src="assets/imgs/logo.svg" alt="logo" />
+            </a>
+            <div class="copy d-flex gap-1">
+              <p>Copyright © 2023 Ride Scanner -</p>
+              <a href="privacy-policy.html">Privacy & Policy</a>
             </div>
+            <ul class="social">
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/filepond.min.js"></script>
-<script src="assets/js/app.js"></script>
-
+  </body>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filepond.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </html>
