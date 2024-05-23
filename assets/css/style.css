@@ -788,12 +788,33 @@ a {
   gap: 8px;
 }
 .content .careersForm form .reverseAuthForm span {
-  font-size: 13px;
+  font-size: 14px;
   color: #333;
 }
 .content .careersForm form .reverseAuthForm a {
-  font-size: 15px;
+  font-size: 14px;
   color: #614b79;
+}
+.content .careersForm form .termsAgreementBox {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.content .careersForm form .termsAgreementBox input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+}
+.content .careersForm form .termsAgreementBox input[type=checkbox]:hover {
+  cursor: pointer;
+}
+.content .careersForm form .termsAgreementBox label {
+  white-space: nowrap;
+  font-size: 14px;
+}
+.content .careersForm form .termsAgreementBox label a {
+  color: #614b79;
+  text-decoration: underline;
 }
 .content .careersForm form .otpCodesContainer {
   width: 100%;
