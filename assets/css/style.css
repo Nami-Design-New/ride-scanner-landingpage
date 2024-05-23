@@ -811,6 +811,11 @@ a {
 .content .careersForm form .termsAgreementBox label {
   white-space: nowrap;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  text-wrap: balance;
 }
 .content .careersForm form .termsAgreementBox label a {
   color: #614b79;
