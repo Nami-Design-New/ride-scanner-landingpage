@@ -774,6 +774,15 @@ a {
   z-index: -1;
   border-radius: 16px 0px;
 }
+.content .careersForm .subtitle {
+  margin: auto;
+  color: #858585;
+  text-transform: none;
+  padding: 0 24px;
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+}
 .content .careersForm form {
   padding: 48px 0 0;
   display: flex;
@@ -836,10 +845,31 @@ a {
   justify-content: center;
   background-color: #fff;
   border: none;
-  outline: 1px solid #858585;
+  border-bottom: 1px solid #858585;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+}
+.content .careersForm form .otpCodesContainer input:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+.content .careersForm form .otpTimerBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.content .careersForm form .otpTimerBox .otpTimer {
+  font-size: 14px;
+  color: #000000;
+}
+.content .careersForm form .otpTimerBox .otpLink {
+  font-size: 14px;
+  color: #614b79;
+  cursor: pointer;
 }
 .content .careersForm form label {
   font-size: 14px;
@@ -859,6 +889,129 @@ a {
   margin: auto;
   color: #fff;
   border-radius: 100px;
+}
+.content .careersForm form input::-moz-placeholder {
+  color: #858585;
+}
+.content .careersForm form input::placeholder {
+  color: #858585;
+}
+.content .contentBody {
+  padding: 40px 0;
+}
+.content .contentBody .bodyHeading {
+  padding: 0 24px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.content .contentBody .bodyHeading .headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.content .contentBody .bodyHeading .headingWrapper h5 {
+  position: relative;
+  margin: 0;
+}
+.content .contentBody .bodyHeading .headingWrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .contentBody .moneyBox {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.content .contentBody .moneyBox .moneyValue {
+  font-weight: 700;
+  display: inline-block;
+  font-size: 32px;
+}
+.content .contentBody .moneyBox .moneyCurrency {
+  font-size: 18px;
+  font-weight: 400;
+}
+.content .contentBody .bodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard {
+  padding: 20px;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 2px 1px #777;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardheading {
+  color: #858585;
+  font-weight: 500;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .value {
+  font-size: 24px;
+  font-weight: 600;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 14px;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status .statusValue.gain {
+  color: rgb(10, 117, 10);
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status .statusValue.lose {
+  color: rgb(226, 50, 50);
+}
+.content .contentBody .bodyContainer .statisticsChartsContainer {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .contentBody .bodyContainer .statisticsChartsContainer .statisticsChartBox {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 300px;
 }
 .content .privacy-policy {
   padding: 40px 0;

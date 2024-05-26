@@ -1,0 +1,337 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no"
+    />
+    <title>Ride Scanner | Dashboard</title>
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap-rtl.min.css"
+      id="bootstrapCss"
+      rel="stylesheet"
+    />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/fav.svg" />
+    <!-- required css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/filepond.min.css" />
+    <link rel="stylesheet" href="assets/css/styleEn.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav class="header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link">
+              <a class="home active" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-link">
+              <a class="how-it-works" href="index.html#how-it-works"
+                >How it works</a
+              >
+            </li>
+            <li class="nav-link">
+              <a class="about" href="index.html#about">About Us</a>
+            </li>
+            <li class="nav-link">
+              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-link">
+              <a href="careers.html">Careers</a>
+            </li>
+            <li class="nav-link">
+              <a href="register.html">Company Account</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns d-flex gap-3">
+          <button class="language btn">AR</button>
+          <button class="btn toogler">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- main-wrapper -->
+    <main class="content">
+      <!-- careers form -->
+      <div class="banner">
+        <h1>Dashboard</h1>
+      </div>
+
+      <div class="contentBody">
+        <div class="container bodyContainer">
+          <div class="statisticsCardsContainer">
+            <div class="card statisticsCard">
+              <h5 class="cardHeading">Total income</h5>
+              <div class="cardContent">
+                <div class="value">500K</div>
+                <div class="status">
+                  <span class="statusValue lose">3.9% </span>
+                  <span>based on last month</span>
+                </div>
+              </div>
+            </div>
+            <div class="card statisticsCard">
+              <h5 class="cardHeading">Orders count</h5>
+              <div class="cardContent">
+                <div class="value">220 orders</div>
+              </div>
+            </div>
+            <div class="card statisticsCard">
+              <h5 class="cardHeading">Cars count</h5>
+              <div class="cardContent">
+                <div class="value">35 Cars</div>
+              </div>
+            </div>
+            <div class="card statisticsCard">
+              <h5 class="cardHeading">Drivers count</h5>
+              <div class="cardContent">
+                <div class="value">50 Drivers</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="statisticsChartsContainer">
+            <div class="statisticsChartBox">
+              <div class="boxHeading">
+                <h4 class="headingTitle">Total net income</h4>
+                <h5 class="">112</h5>
+              </div>
+              <div
+                class="apex-charts statisticsChart"
+                id="simple_dount_chart"
+                data-colors='["#f6c77d", "#90be6d", "#f8961e"]'
+                dir="ltr"
+              ></div>
+            </div>
+            <div class="statisticsChartBox">
+              <div class="boxHeading">
+                <h4 class="headingTitle">Total payment</h4>
+                <h5 class="">2000</h5>
+              </div>
+              <div
+                class="apex-charts statisticsChart"
+                id="line_chart_datalabel"
+                data-colors='["#16a34a", "#f6c77d"]'
+                dir="ltr"
+              ></div>
+            </div>
+          </div>
+
+          <div class="latestOrdersSection">
+            <div class="latestOrdersHeading">
+              <h2>Latest Orders</h2>
+              <a href="">View All</a>
+            </div>
+            <div class="latestOrdersContainer">
+              <div class="orderBox">
+                <div class="orderHeading">
+                  <div class="orderUser">
+                    <figure>
+                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
+                    </figure>
+                    <p class="userName">Mohamed Ahmed</p>
+                  </div>
+                  <span class="orderStatus">Pending</span>
+                </div>
+                <div class="orderContent">
+                  <div class="orderPath">
+                    <div class="pathIcons">
+                      <div class="iconBox iconFrom">
+                        <img
+                          src="assets/imgs/dot-and-circle.png"
+                          alt="location"
+                        />
+                      </div>
+                      <span class="pathLine"></span>
+                      <div class="iconBox iconTo">
+                        <img
+                          src="assets/imgs/location-pin.png"
+                          alt="location"
+                        />
+                      </div>
+                    </div>
+                    <div class="pathContent">
+                      <div class="pathBox from">Riyadh, Al Zahrah</div>
+                      <div class="pathBox to">Riyadh, Al Zahrah</div>
+                    </div>
+                  </div>
+
+                  <div class="orderCost">
+                    <p class="costTitle">Price:</p>
+                    <p class="costValue">200 <span>SAR</span></p>
+                  </div>
+
+                  <span class="orderDate"> 12/11/2023 </span>
+                </div>
+              </div>
+
+              <div class="orderBox">
+                <div class="orderHeading">
+                  <div class="orderUser">
+                    <figure>
+                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
+                    </figure>
+                    <p class="userName">Mohamed Ahmed</p>
+                  </div>
+                  <span class="orderStatus completed">Completed</span>
+                </div>
+                <div class="orderContent">
+                  <div class="orderPath">
+                    <div class="pathIcons">
+                      <div class="iconBox iconFrom">
+                        <img
+                          src="assets/imgs/dot-and-circle.png"
+                          alt="location"
+                        />
+                      </div>
+                      <span class="pathLine"></span>
+                      <div class="iconBox iconTo">
+                        <img
+                          src="assets/imgs/location-pin.png"
+                          alt="location"
+                        />
+                      </div>
+                    </div>
+                    <div class="pathContent">
+                      <div class="pathBox from">Riyadh, Al Zahrah</div>
+                      <div class="pathBox to">Riyadh, Al Zahrah</div>
+                    </div>
+                  </div>
+
+                  <div class="orderCost">
+                    <p class="costTitle">Price:</p>
+                    <p class="costValue">200 <span>SAR</span></p>
+                  </div>
+
+                  <span class="orderDate"> 12/11/2023 </span>
+                </div>
+              </div>
+
+              <div class="orderBox">
+                <div class="orderHeading">
+                  <div class="orderUser">
+                    <figure>
+                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
+                    </figure>
+                    <p class="userName">Mohamed Ahmed</p>
+                  </div>
+                  <span class="orderStatus canceled">Canceled</span>
+                </div>
+                <div class="orderContent">
+                  <div class="orderPath">
+                    <div class="pathIcons">
+                      <div class="iconBox iconFrom">
+                        <img
+                          src="assets/imgs/dot-and-circle.png"
+                          alt="location"
+                        />
+                      </div>
+                      <span class="pathLine"></span>
+                      <div class="iconBox iconTo">
+                        <img
+                          src="assets/imgs/location-pin.png"
+                          alt="location"
+                        />
+                      </div>
+                    </div>
+                    <div class="pathContent">
+                      <div class="pathBox from">Riyadh, Al Zahrah</div>
+                      <div class="pathBox to">Riyadh, Al Zahrah</div>
+                    </div>
+                  </div>
+
+                  <div class="orderCost">
+                    <p class="costTitle">Price:</p>
+                    <p class="costValue">200 <span>SAR</span></p>
+                  </div>
+
+                  <span class="orderDate"> 12/11/2023 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carsMapContainer" style="margin-bottom: -12px">
+            <h2>Cars Map</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0369388737!2d46.16300625143723!3d24.724997762880996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1715846234214!5m2!1sen!2seg"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+          >
+            <a class="logo" href="index.html">
+              <img src="assets/imgs/logo.svg" alt="logo" />
+            </a>
+            <div class="copy d-flex gap-1">
+              <p>Copyright © 2023 Ride Scanner -</p>
+              <a href="privacy-policy.html">Privacy & Policy</a>
+            </div>
+            <ul class="social">
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- apexcharts -->
+  <script src="assets/js/apexcharts.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filepond.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".filepond-multiple").filepond({
+        allowMultiple: true,
+      });
+    });
+  </script>
+</html>

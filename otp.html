@@ -59,13 +59,14 @@
     <main class="content">
       <!-- careers form -->
       <div class="banner">
-        <h1>OTP Code</h1>
+        <h1>Enter Verification Code</h1>
       </div>
       <section class="careersForm otpForm">
         <div class="container">
           <div class="row">
             <div class="col-sm-10 col-md-8 col-lg-6 m-auto">
-              <h1 class="title">Be part of our mission</h1>
+              <h2 class="title">Please enter the code sent to your Phone</h2>
+              <h2 class="subtitle">+996012345678</h2>
               <!-- if this form opened from forget password, action will be reset-password.html -->
               <!-- if this form opened from register, action will complete-register.html -->
               <form action="complete-register.html">
@@ -105,6 +106,10 @@
                     placeholder="-"
                     maxlength="1"
                   />
+                </div>
+                <div class="otpTimerBox">
+                  <span class="otpLink">Resend the code</span>
+                  <span class="otpTimer">00:48</span>
                 </div>
                 <button type="submit" class="send">Verify</button>
               </form>

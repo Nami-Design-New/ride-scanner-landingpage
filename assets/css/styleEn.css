@@ -771,6 +771,15 @@ a {
   z-index: -1;
   border-radius: 16px 0px;
 }
+.content .careersForm .subtitle {
+  margin: auto;
+  color: #858585;
+  text-transform: none;
+  padding: 0 24px;
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+}
 .content .careersForm form {
   padding: 48px 0 0;
   display: flex;
@@ -833,10 +842,31 @@ a {
   justify-content: center;
   background-color: #fff;
   border: none;
-  outline: 1px solid #858585;
+  border-bottom: 1px solid #858585;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+}
+.content .careersForm form .otpCodesContainer input:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+.content .careersForm form .otpTimerBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.content .careersForm form .otpTimerBox .otpTimer {
+  font-size: 14px;
+  color: #000000;
+}
+.content .careersForm form .otpTimerBox .otpLink {
+  font-size: 14px;
+  color: #614b79;
+  cursor: pointer;
 }
 .content .careersForm form label {
   font-size: 14px;
@@ -858,6 +888,306 @@ a {
   border-radius: 100px;
   outline: none;
   border: none;
+}
+.content .careersForm form input::-moz-placeholder {
+  color: #858585;
+}
+.content .careersForm form input::placeholder {
+  color: #858585;
+}
+.content .contentBody {
+  padding: 40px 0;
+}
+.content .contentBody .bodyHeading {
+  padding: 0 24px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.content .contentBody .bodyHeading .headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.content .contentBody .bodyHeading .headingWrapper h5 {
+  position: relative;
+  margin: 0;
+}
+.content .contentBody .bodyHeading .headingWrapper img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .contentBody .moneyBox {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.content .contentBody .moneyBox .moneyValue {
+  font-weight: 700;
+  display: inline-block;
+  font-size: 32px;
+}
+.content .contentBody .moneyBox .moneyCurrency {
+  font-size: 18px;
+  font-weight: 400;
+}
+.content .contentBody .bodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard {
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 2px 1px #555;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardheading {
+  color: #858585;
+  font-weight: 500;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .value {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 14px;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status .statusValue.gain {
+  color: rgb(10, 117, 10);
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardContent .status .statusValue.lose {
+  color: rgb(226, 50, 50);
+}
+.content .contentBody .bodyContainer .statisticsChartsContainer {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .contentBody .bodyContainer .statisticsChartsContainer .statisticsChartBox {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 300px;
+}
+.content .contentBody .bodyContainer .latestOrdersSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersHeading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersHeading a {
+  color: #614b79;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox {
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: 40px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 2px 1px #555;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser figure {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser .userName {
+  font-weight: 600;
+  margin: 0;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus {
+  color: #858585;
+  font-weight: 600;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus.completed {
+  color: rgb(10, 117, 10);
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus.canceled {
+  color: rgb(226, 50, 50);
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent {
+  flex: 1 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  align-items: center;
+  height: 100%;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathIcons .iconBox {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathIcons .iconBox img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathIcons .pathLine {
+  flex: 1 0 0;
+  border: 2px dashed #000;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathContent {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath .pathContent .pathBox {
+  padding: 4px 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  background-color: #efefef;
+  border: 1px solid #777;
+  color: #000000;
+  font-weight: normal;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost p {
+  margin: 0;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost p.costTitle {
+  color: #858585;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost p.costValue {
+  font-weight: 600;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost p.costValue span {
+  font-size: 12px;
+  font-weight: normal;
+}
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderDate {
+  width: 100%;
+  text-align: right;
+  color: #858585;
+}
+.content .contentBody .bodyContainer .carsMapContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
 }
 .content .privacy-policy {
   padding: 40px 0;

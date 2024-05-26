@@ -752,6 +752,15 @@ a {
         border-radius: 16px 0px;
       }
     }
+    .subtitle {
+      margin: auto;
+      color: $text-color;
+      text-transform: none;
+      padding: 0 24px;
+      position: relative;
+      margin-top: 10px;
+      text-align: center;
+    }
     form {
       padding: 48px 0 0;
       display: flex;
@@ -821,10 +830,34 @@ a {
           justify-content: center;
           background-color: $white-color;
           border: none;
-          outline: 1px solid $text-color;
+          border-bottom: 1px solid $text-color;
           text-align: center;
           font-size: 24px;
           font-weight: bold;
+
+          &:focus {
+            outline: none;
+            border-bottom-color: #000;
+          }
+        }
+      }
+      .otpTimerBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+
+        .otpTimer {
+          font-size: 14px;
+          color: $black-color;
+        }
+
+        .otpLink {
+          font-size: 14px;
+          color: $main-color;
+          cursor: pointer;
         }
       }
       label {
@@ -845,6 +878,142 @@ a {
         margin: auto;
         color: $white-color;
         border-radius: 100px;
+      }
+      input {
+        &::placeholder {
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .contentBody {
+    padding: 40px 0;
+    .bodyHeading {
+      padding: 0 24px;
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+
+      .headingWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        h5 {
+          position: relative;
+          margin: 0;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .moneyBox {
+      width: 100%;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .moneyValue {
+        font-weight: 700;
+        display: inline-block;
+        font-size: 32px;
+      }
+
+      .moneyCurrency {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    .bodyContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .statisticsCardsContainer {
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .statisticsCard {
+          padding: 20px;
+          display: flex;
+          flex: 1 0 0;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+          background-color: $white-color;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          box-shadow: 0 0 2px 1px #777;
+
+          .cardheading {
+            color: $text-color;
+            font-weight: 500;
+          }
+
+          .cardContent {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: flex-start;
+
+            .value {
+              font-size: 24px;
+              font-weight: 600;
+            }
+
+            .status {
+              display: flex;
+              white-space: nowrap;
+              flex-wrap: wrap;
+              gap: 4px;
+              font-size: 14px;
+
+              .statusValue {
+                &.gain {
+                  color: rgb(10, 117, 10);
+                }
+                &.lose {
+                  color: rgb(226, 50, 50);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .statisticsChartsContainer {
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .statisticsChartBox {
+          flex: 1 0 0;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          min-width: 300px;
+        }
       }
     }
   }

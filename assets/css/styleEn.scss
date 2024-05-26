@@ -749,6 +749,15 @@ a {
         border-radius: 16px 0px;
       }
     }
+    .subtitle {
+      margin: auto;
+      color: $text-color;
+      text-transform: none;
+      padding: 0 24px;
+      position: relative;
+      margin-top: 10px;
+      text-align: center;
+    }
     form {
       padding: 48px 0 0;
       display: flex;
@@ -818,10 +827,34 @@ a {
           justify-content: center;
           background-color: $white-color;
           border: none;
-          outline: 1px solid $text-color;
+          border-bottom: 1px solid $text-color;
           text-align: center;
           font-size: 24px;
           font-weight: bold;
+
+          &:focus {
+            outline: none;
+            border-bottom-color: #000;
+          }
+        }
+      }
+      .otpTimerBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+
+        .otpTimer {
+          font-size: 14px;
+          color: $black-color;
+        }
+
+        .otpLink {
+          font-size: 14px;
+          color: $main-color;
+          cursor: pointer;
         }
       }
       label {
@@ -844,6 +877,343 @@ a {
         border-radius: 100px;
         outline: none;
         border: none;
+      }
+      input {
+        &::placeholder {
+          color: $text-color;
+        }
+      }
+    }
+  }
+  .contentBody {
+    padding: 40px 0;
+    .bodyHeading {
+      padding: 0 24px;
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+
+      .headingWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        h5 {
+          position: relative;
+          margin: 0;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .moneyBox {
+      width: 100%;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .moneyValue {
+        font-weight: 700;
+        display: inline-block;
+        font-size: 32px;
+      }
+
+      .moneyCurrency {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    .bodyContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .statisticsCardsContainer {
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        .statisticsCard {
+          min-width: 300px;
+          padding: 20px;
+          display: flex;
+          flex: 1 0 0;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          background-color: #fefefe;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          box-shadow: 0 0 2px 1px #555;
+
+          .cardheading {
+            color: $text-color;
+            font-weight: 500;
+          }
+
+          .cardContent {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: flex-start;
+
+            .value {
+              font-size: 24px;
+              font-weight: 600;
+              text-align: center;
+              width: 100%;
+            }
+
+            .status {
+              display: flex;
+              white-space: nowrap;
+              flex-wrap: wrap;
+              gap: 4px;
+              font-size: 14px;
+
+              .statusValue {
+                &.gain {
+                  color: rgb(10, 117, 10);
+                }
+                &.lose {
+                  color: rgb(226, 50, 50);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .statisticsChartsContainer {
+        padding: 16px;
+        width: 100%;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .statisticsChartBox {
+          flex: 1 0 0;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          min-width: 300px;
+        }
+      }
+
+      .latestOrdersSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+
+        .latestOrdersHeading {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          position: relative;
+
+          a {
+            color: $main-color;
+          }
+        }
+
+        .latestOrdersContainer {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+          position: relative;
+          flex-wrap: wrap;
+
+          .orderBox {
+            min-width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 0;
+            gap: 40px;
+            background-color: #fefefe;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            box-shadow: 0 0 2px 1px #555;
+
+            .orderHeading {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 20px;
+
+              .orderUser {
+                flex: 1 0 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                figure {
+                  width: 40px;
+                  height: 40px;
+                  margin: 0;
+                  display: flex;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  overflow: hidden;
+
+                  img {
+                    width: 100%;
+                    object-fit: cover;
+                  }
+                }
+                .userName {
+                  font-weight: 600;
+                  margin: 0;
+                }
+              }
+
+              .orderStatus {
+                color: $text-color;
+                font-weight: 600;
+
+                &.completed {
+                  color: rgb(10, 117, 10);
+                }
+                &.canceled {
+                  color: rgb(226, 50, 50);
+                }
+              }
+            }
+
+            .orderContent {
+              flex: 1 0 0;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              position: relative;
+
+              .orderPath {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .pathIcons {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 0;
+                  position: relative;
+                  align-items: center;
+                  height: 100%;
+
+                  .iconBox {
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    img {
+                      width: 100%;
+                      object-fit: cover;
+                    }
+                  }
+
+                  .pathLine {
+                    flex: 1 0 0;
+                    border: 2px dashed #000;
+                  }
+                }
+
+                .pathContent {
+                  flex: 1 0 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+                  position: relative;
+
+                  .pathBox {
+                    padding: 4px 16px;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
+                    background-color: #efefef;
+                    border: 1px solid #777;
+                    color: $black-color;
+                    font-weight: normal;
+                  }
+                }
+              }
+
+              .orderCost {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                position: relative;
+
+                p {
+                  margin: 0;
+
+                  &.costTitle {
+                    color: $text-color;
+                  }
+
+                  &.costValue {
+                    font-weight: 600;
+
+                    span {
+                      font-size: 12px;
+                      font-weight: normal;
+                    }
+                  }
+                }
+              }
+
+              .orderDate {
+                width: 100%;
+                text-align: right;
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+
+      .carsMapContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
       }
     }
   }
