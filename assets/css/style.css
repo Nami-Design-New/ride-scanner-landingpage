@@ -1122,4 +1122,95 @@ footer .copy a img {
 .banner h1 {
   font-size: 32px;
   color: #614b79;
+}
+
+.table {
+  width: 100% !important;
+}
+.table .dtr-details {
+  display: flex !important;
+  flex-direction: column;
+  font-size: 14px;
+}
+.table .dtr-details > li {
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  row-gap: 4px;
+}
+.table .dtr-details > li .dtr-data {
+  white-space: normal;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.table tbody th,
+.table tbody td,
+.table thead th,
+.table thead td {
+  padding: 12px;
+  border: none !important;
+  text-align: start !important;
+}
+.table tbody th:hover,
+.table tbody td:hover,
+.table thead th:hover,
+.table thead td:hover {
+  outline: unset !important;
+}
+.table tbody .dt-column-title,
+.table thead .dt-column-title {
+  white-space: nowrap;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9 !important;
+}
+
+.dt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px 8px;
+  background-color: #fff;
+}
+
+.dt-layout-table .dt-layout-cell {
+  width: 100%;
+}
+
+.dt-layout-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dt-layout-row .dt-layout-cell > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dt-layout-row .dt-layout-cell > div .dt-paging-button {
+  padding: 8px;
+  border: none;
+  aspect-ratio: 1;
+  min-width: 32px;
+  border-radius: 4px;
+}
+.dt-layout-row .dt-layout-cell > div .dt-paging-button:hover, .dt-layout-row .dt-layout-cell > div .dt-paging-button.current {
+  background-color: #614b79;
+  color: #fff;
+}
+.dt-layout-row select,
+.dt-layout-row input {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  min-height: 40px;
+  padding: 8px;
 }/*# sourceMappingURL=style.css.map */

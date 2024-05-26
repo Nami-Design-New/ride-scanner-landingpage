@@ -134,7 +134,7 @@
           <div class="latestOrdersSection">
             <div class="latestOrdersHeading">
               <h2>Latest Orders</h2>
-              <a href="">View All</a>
+              <a href="orders.html">View All</a>
             </div>
             <div class="latestOrdersContainer">
               <div class="orderBox">
@@ -265,10 +265,11 @@
             </div>
           </div>
 
-          <div class="carsMapContainer" style="margin-bottom: -12px">
+          <div class="carsMapContainer">
             <h2>Cars Map</h2>
+            <div id="dashboardMap"></div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0369388737!2d46.16300625143723!3d24.724997762880996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1715846234214!5m2!1sen!2seg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14903546.801014509!2d45.0741!3d24.222141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1659632180387!5m2!1sar!2seg"
               width="100%"
               height="400"
               style="border: 0"
@@ -323,6 +324,8 @@
   </body>
   <!-- apexcharts -->
   <script src="assets/js/apexcharts.min.js"></script>
+  <!-- Include the Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filepond.min.js"></script>

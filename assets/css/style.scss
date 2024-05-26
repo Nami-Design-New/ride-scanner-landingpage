@@ -1125,3 +1125,98 @@ footer {
     color: $main-color;
   }
 }
+
+.table {
+  width: 100% !important;
+
+  .dtr-details {
+    display: flex !important;
+    flex-direction: column;
+    font-size: 14px;
+    > li {
+      border-bottom: 1px solid #efefef;
+      padding: 0.5em 0;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      row-gap: 4px;
+      .dtr-data {
+        white-space: normal;
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+    }
+  }
+  tbody,
+  thead {
+    th,
+    td {
+      padding: 12px;
+      border: none !important;
+      text-align: start !important;
+      &:hover {
+        outline: unset !important;
+      }
+    }
+    .dt-column-title {
+      white-space: nowrap;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #f9f9f9 !important;
+      }
+    }
+  }
+}
+.dt-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px 8px;
+  background-color: $white-color;
+}
+.dt-layout-table {
+  .dt-layout-cell {
+    width: 100%;
+  }
+}
+.dt-layout-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  .dt-layout-cell {
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .dt-paging-button {
+        padding: 8px;
+        border: none;
+        aspect-ratio: 1;
+        min-width: 32px;
+        border-radius: 4px;
+        &:hover,
+        &.current {
+          background-color: $main-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+  select,
+  input {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    min-height: 40px;
+    padding: 8px;
+  }
+}
