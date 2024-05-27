@@ -2166,7 +2166,7 @@ aside .asideNav .navItem .submenu .submenuItem a {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -2176,4 +2176,12 @@ aside .asideNav .navItem .submenu .submenuItem a {
   cursor: pointer;
   border: none;
   outline: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.subscriptionsContainer .btnBox .confirmBtn.show {
+  display: flex;
 }/*# sourceMappingURL=styleEn.css.map */

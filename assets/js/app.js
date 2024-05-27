@@ -175,13 +175,15 @@ createLineChart(
   380
 );
 
-const submenuLinks = document.querySelectorAll(`.header .container .nav-links ul .nav-link.submenulink`);
+const submenuLinks = document.querySelectorAll(
+  `.header .container .nav-links ul .nav-link.submenulink`
+);
 
-submenuLinks?.forEach(link => {
-  link.addEventListener("click", function() {
+submenuLinks?.forEach((link) => {
+  link.addEventListener("click", function () {
     link.classList.toggle("open");
-  })
-})
+  });
+});
 
 // Toggle showing aside
 const aside = document.querySelector(`aside`);
@@ -191,4 +193,20 @@ const asideNav = document.querySelector(`aside .asideNav`);
 asideIcon?.addEventListener("click", function () {
   aside?.classList.toggle("shrink");
   asideNav?.classList.toggle("open");
+});
+
+// Show the confirm btn when check one input
+const subscriptionsInputs = document.querySelectorAll(
+  `.subscriptionsContainer .subscriptionInputGroup input`
+);
+const confirmBtn = document.querySelector(
+  `.subscriptionsContainer .btnBox .confirmBtn`
+);
+
+subscriptionsInputs?.forEach((input) => {
+  input?.addEventListener("click", function () {
+    if (!confirmBtn?.classList.contains("show")) {
+      confirmBtn?.classList.add("show");
+    }
+  });
 });
