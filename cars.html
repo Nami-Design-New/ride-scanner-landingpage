@@ -14,103 +14,1251 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/filepond.min.css" />
     <link rel="stylesheet" href="assets/css/styleEn.css" />
+    <!-- data tables -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css"
+    />
   </head>
 
   <body>
-    <!-- header -->
-    <nav class="header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
+    <div class="dashboardPage carsPage">
+      <!-- Aside -->
+      <aside class="">
+        <div class="asideIcon">
+          <span class="iconBar"> </span><span class="iconBar"></span>
+          <span class="iconBar"></span>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link">
-              <a class="home active" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-link">
-              <a class="how-it-works" href="index.html#how-it-works"
-                >How it works</a
-              >
-            </li>
-            <li class="nav-link">
-              <a class="about" href="index.html#about">About Us</a>
-            </li>
-            <li class="nav-link">
-              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
-            </li>
-            <li class="nav-link">
-              <a href="careers.html">Careers</a>
-            </li>
-            <li class="nav-link">
-              <a href="register.html">Company Account</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns d-flex gap-3">
-          <button class="language btn">AR</button>
-          <button class="btn toogler">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <!-- main-wrapper -->
-    <main class="content">
-      <!-- careers form -->
-      <div class="banner">
-        <h1>Cars</h1>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
-          >
-            <a class="logo" href="index.html">
-              <img src="assets/imgs/logo.svg" alt="logo" />
+        <a class="asideLogo" href="index.html">
+          <img
+            src="assets/imgs/logo-icon.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoIcon"
+          />
+          <img
+            src="assets/imgs/logo-title.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoTitle"
+          />
+        </a>
+        <ul class="asideNav">
+          <li class="navItem">
+            <a href="dashboard.html" class="navLink">
+              <img
+                src="assets/imgs/dashboard-icon.svg"
+                alt="Dashboard"
+                title="Dashboard"
+              />
+              <p>Dashboard</p>
             </a>
-            <div class="copy d-flex gap-1">
-              <p>Copyright © 2023 Ride Scanner -</p>
-              <a href="privacy-policy.html">Privacy & Policy</a>
-            </div>
-            <ul class="social">
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="navItem">
+            <a href="drivers.html" class="navLink">
+              <img src="assets/imgs/driver.png" alt="Drivers" title="Drivers" />
+              <p>Drivers</p>
+            </a>
+          </li>
+          <li class="navItem active">
+            <a href="cars.html" class="navLink">
+              <img src="assets/imgs/car.png" alt="Cars" title="Cars" />
+              <p>Cars</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="orders.html" class="navLink">
+              <img src="assets/imgs/orders.png" alt="Orders" title="Orders" />
+              <p>Orders</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="wallet.html" class="navLink">
+              <img src="assets/imgs/wallet.png" alt="Wallet" title="Wallet" />
+              <p>Wallet</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="subscription.html" class="navLink">
+              <img
+                src="assets/imgs/subscription.png"
+                alt="Subscription"
+                title="Subscription"
+              />
+              <p>Subscription</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="login.html" class="navLink">
+              <img
+                src="assets/imgs/logout-icon.svg"
+                alt="Log out"
+                title="Log out"
+              />
+              <p>Log Out</p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <!-- Start Main & Footer -->
+      <div class="mainAndFooterWrapper">
+        <main class="content">
+          <div class="banner">
+            <h1>Cars</h1>
           </div>
+
+          <div class="contentBody">
+            <div class="tableContainer">
+              <div class="tableHeading">
+                <span class="addBtn">Add Car</span>
+              </div>
+              <table class="table" id="ordersTable">
+                <thead>
+                  <tr>
+                    <th data-ordering="false">Brand</th>
+                    <th data-ordering="false">Model</th>
+                    <th data-ordering="false">Year</th>
+                    <th data-ordering="false">Car Plate Number</th>
+                    <th data-ordering="false">License Number</th>
+                    <th data-ordering="false">License Image</th>
+                    <th data-ordering="false">Operations</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>mercedes</td>
+                    <td>Model</td>
+                    <td>2024</td>
+                    <td>25369</td>
+                    <td>25369123456789</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="licene image"
+                        class="img"
+                      />
+                    </td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn linkBtn">
+                          <img
+                            src="assets/imgs/link.png"
+                            alt="edit car with driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+              >
+                <a class="logo" href="index.html">
+                  <img src="assets/imgs/logo.svg" alt="logo" />
+                </a>
+                <div class="copy d-flex gap-1">
+                  <p>Copyright © 2023 Ride Scanner -</p>
+                  <a href="privacy-policy.html">Privacy & Policy</a>
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- End Main & Footer -->
+    </div>
+    <!-- Car Modal -->
+    <div class="modalSection carModalSection">
+      <div class="modalBox">
+        <div class="modalHeading">
+          <h6 class="modalLabel">Add Car</h6>
+          <span class="closeBtnBox">
+            <img
+              src="assets/imgs/x-icon.svg"
+              alt="close modal"
+              title="close modal"
+            />
+          </span>
+        </div>
+        <form class="modalForm">
+          <div class="formBody">
+            <div class="inputGroup">
+              <label for="carBrandInput">Brand</label>
+              <input
+                type="text"
+                name="carBrand"
+                id="carBrandInput"
+                placeholder="Mercededs"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="carModelInput">Model</label>
+              <input
+                type="text"
+                name="carModel"
+                id="carModelInput"
+                placeholder="Model"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="carYearInput">Year</label>
+              <input
+                type="number"
+                name="carYear"
+                id="carYearInput"
+                placeholder="Year"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="carPlateNumberInput">Car Plate Number</label>
+              <input
+                type="number"
+                name="carPlateNumber"
+                id="carPlateNumberInput"
+                placeholder="25678"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="carLicenseNumberInput">License Number</label>
+              <input
+                type="number"
+                name="carLicenseNumber"
+                id="carLicenseNumberInput"
+                placeholder="12555465452"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="carLiccenseImgInput">License Image</label>
+              <input
+                type="file"
+                name="carLiccenseImg"
+                id="carLiccenseImgInput"
+                class="filepond-multiple"
+              />
+            </div>
+            <div class="btnsBox">
+              <span class="btn addBtn">Add</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Drivers Modal -->
+    <div class="modalSection driversModalSection">
+      <div class="modalBox">
+        <div class="modalHeading">
+          <h6 class="modalLabel">Link Car with Driver</h6>
+          <span class="closeBtnBox">
+            <img
+              src="assets/imgs/x-icon.svg"
+              alt="close modal"
+              title="close modal"
+            />
+          </span>
+        </div>
+        <div class="tableContainer">
+          <table class="table" id="ordersTable">
+            <thead>
+              <tr>
+                <th data-ordering="false">Name</th>
+                <th data-ordering="false">License Image</th>
+                <th data-ordering="false">PIN</th>
+                <th data-ordering="false">Relatations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver1">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver1"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver2">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver2"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver3">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver3"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver4">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver4"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver5">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver5"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver6">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver6"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver7">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver7"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver8">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver8"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver9">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver9"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver10">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver10"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver11">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver11"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mohamed Ahmed</td>
+                <td>
+                  <img
+                    src="assets/imgs/license-img.jpg"
+                    alt="licene image"
+                    class="img"
+                  />
+                </td>
+                <td>123456</td>
+                <td>
+                  <div class="operationsBtns">
+                    <div class="inputGroup">
+                      <label for="linkDriver12">Link</label>
+                      <input
+                        type="checkbox"
+                        name="linkDriver"
+                        id="linkDriver12"
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
+
+  <!-- jquery  -->
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filepond.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <!-- Data Tables -->
+  <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
   <script>
     $(document).ready(function () {
       $(".filepond-multiple").filepond({
         allowMultiple: true,
       });
     });
+
+    $(".table").DataTable({
+      responsive: true,
+    });
+
+    // Modal Operations
+    const carModal = document.querySelector(`.carModalSection`);
+    const driversModal = document.querySelector(`.driversModalSection`);
+    const carModalBody = document.querySelector(`.carModalSection .modalBox`);
+    const driversModalBody = document.querySelector(
+      `.driversModalSection .modalBox`
+    );
+    const carModalCloseBtn = document.querySelector(
+      `.carModalSection .modalBox .modalHeading .closeBtnBox`
+    );
+    const deriverModalCloseBtn = document.querySelector(
+      `.driversModalSection .modalBox .modalHeading .closeBtnBox`
+    );
+    const addCarBtn = document.querySelector(
+      `.content .contentBody .tableContainer .tableHeading .addBtn`
+    );
+    const linkCarBtns = document.querySelectorAll(
+      `.content .contentBody .tableContainer .linkBtn`
+    );
+    // close the modal when clicking the close button
+    carModalCloseBtn?.addEventListener("click", function () {
+      carModal?.classList.remove("open");
+    });
+    deriverModalCloseBtn?.addEventListener("click", function () {
+      driversModal?.classList.remove("open");
+    });
+    // open the Modal for adding new association
+    addCarBtn?.addEventListener("click", function () {
+      carModal?.classList.add("open");
+    });
+    linkCarBtns?.forEach((btn) => {
+      btn?.addEventListener("click", function () {
+        driversModal?.classList.add("open");
+      });
+    });
+    // Close the Modal when clicking outside its body
+    document.addEventListener(
+      "click",
+      function (e) {
+        if (
+          !carModalBody?.contains(e.target) &&
+          carModal?.classList.contains("open")
+        ) {
+          carModal?.classList.remove("open");
+        }
+        if (
+          !driversModalBody?.contains(e.target) &&
+          driversModal?.classList.contains("open")
+        ) {
+          driversModal?.classList.remove("open");
+        }
+      },
+      true
+    );
   </script>
 </html>

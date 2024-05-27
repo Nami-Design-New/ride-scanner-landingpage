@@ -1,9 +1,9 @@
 let header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 120) {
-    header.classList.add("sticky");
+    header?.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    header?.classList.remove("sticky");
   }
 });
 let numbers = document.querySelectorAll(".num");
@@ -17,10 +17,10 @@ function startCount(element) {
     }
   }, 4000 / goal);
 }
-window.onscroll = function() {
+window.onscroll = function () {
   if (this.scrollY >= 100) {
     if (!started) {
-      numbers.forEach(num => startCount(num));
+      numbers.forEach((num) => startCount(num));
     }
     started = true;
   }
@@ -29,13 +29,13 @@ let navLinks = document.querySelectorAll(".nav-link a");
 let sections = document.querySelectorAll(".sec");
 let current;
 window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
+  sections.forEach((sec) => {
     let secTop = sec.offsetTop;
     if (pageYOffset >= secTop - 100) {
       current = sec.getAttribute("id");
     }
   });
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.classList.remove("active");
     if (link.classList.contains(current)) {
       link.classList.add("active");
@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
 });
 let toogler = document.querySelector(".toogler");
 let menu = document.querySelector(".nav-links");
-toogler.addEventListener("click", () => {
+toogler?.addEventListener("click", () => {
   menu.classList.toggle("showing");
   menu.classList.contains("showing")
     ? (toogler.querySelector("i").classList =
@@ -60,7 +60,7 @@ var phoneImgs = new Swiper(".phoneImgs", {
   speed: 1000,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   loop: true,
   slidesPerView: "auto",
@@ -69,18 +69,18 @@ var phoneImgs = new Swiper(".phoneImgs", {
     stretch: 10,
     depth: 200,
     modifier: 1.2,
-    slideShadows: true
+    slideShadows: true,
   },
   navigation: {
     nextEl: ".appSliderNext",
-    prevEl: ".appSliderPrev"
-  }
+    prevEl: ".appSliderPrev",
+  },
 });
 // aos
 //aos Delay
-$("section").each(function() {
+$("section").each(function () {
   const sectionDivs = $(this).find("[data-aos]");
-  sectionDivs.each(function(index) {
+  sectionDivs.each(function (index) {
     $(this).attr("data-aos-delay", (index + 1) * 100);
   });
 });
@@ -90,7 +90,7 @@ AOS.init({
   delay: 50,
   duration: 750,
   // easing: "linear",
-  once: true
+  once: true,
 });
 
 function getChartColorsArray(id) {
@@ -174,3 +174,21 @@ createLineChart(
   ],
   380
 );
+
+const submenuLinks = document.querySelectorAll(`.header .container .nav-links ul .nav-link.submenulink`);
+
+submenuLinks?.forEach(link => {
+  link.addEventListener("click", function() {
+    link.classList.toggle("open");
+  })
+})
+
+// Toggle showing aside
+const aside = document.querySelector(`aside`);
+const asideIcon = document.querySelector(`aside .asideIcon`);
+const asideNav = document.querySelector(`aside .asideNav`);
+
+asideIcon?.addEventListener("click", function () {
+  aside?.classList.toggle("shrink");
+  asideNav?.classList.toggle("open");
+});

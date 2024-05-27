@@ -5,7 +5,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 user-scalable= no shrink-to-fit= no"
     />
-    <title>Ride Scanner | Wallet</title>
+    <title>Ride Scanner | Subscriptions</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/imgs/fav.svg" />
     <!-- required css -->
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="dashboardPage walletPage">
+    <div class="dashboardPage subscriptionsPage">
       <!-- Aside -->
       <aside class="">
         <div class="asideIcon">
@@ -67,13 +67,13 @@
               <p>Orders</p>
             </a>
           </li>
-          <li class="navItem active">
+          <li class="navItem">
             <a href="wallet.html" class="navLink">
               <img src="assets/imgs/wallet.png" alt="Wallet" title="Wallet" />
               <p>Wallet</p>
             </a>
           </li>
-          <li class="navItem">
+          <li class="navItem active">
             <a href="subscription.html" class="navLink">
               <img
                 src="assets/imgs/subscription.png"
@@ -102,76 +102,86 @@
         <main class="content">
           <!-- careers form -->
           <div class="banner">
-            <h1>Wallet</h1>
+            <h1>Subscriptions</h1>
           </div>
 
           <div class="contentBody">
-            <div class="container">
-              <div class="bodyHeading">
-                <div class="headingWrapper">
-                  <img
-                    src="assets/imgs/money-icon.svg"
-                    alt="Money balance"
-                    title="Money balance"
+            <div class="container bodyContainer">
+              <form class="subscriptionsContainer">
+                <div class="subscriptionInputGroup">
+                  <input
+                    type="radio"
+                    name="subscriptionPlan"
+                    id="subscriptionPlanOneDay"
                   />
-                  <h5>Your Balance</h5>
+                  <label for="subscriptionPlanOneDay">
+                    <h5 class="planDuration"><span>1</span> Day</h5>
+                    <div class="planCostInfo">
+                      <p class="planCost">5 <span>SAR</span></p>
+                      <p class="costPrecentage">5 SAR / Day</p>
+                    </div>
+                  </label>
                 </div>
-                <div class="moneyBox">
-                  <span class="moneyValue">2,600</span>
-                  <span class="moneyCurrency">SAR</span>
+                <div class="subscriptionInputGroup">
+                  <input
+                    type="radio"
+                    name="subscriptionPlan"
+                    id="subscriptionPlanOneMonth"
+                  />
+                  <label for="subscriptionPlanOneMonth">
+                    <h5 class="planDuration"><span>1</span> Month</h5>
+                    <div class="planCostInfo">
+                      <p class="planCost">120 <span>SAR</span></p>
+                      <p class="costPrecentage">5 SAR / Day</p>
+                    </div>
+                  </label>
                 </div>
-              </div>
-
-              <div class="historyContainer">
-                <h5 class="historyHeading">History</h5>
-                <div class="historyContent">
-                  <div class="historyBox pay">
-                    <div class="boxInfo">
-                      <p class="boxCost">400 <span>SAR</span></p>
-                      <p class="boxDate">
-                        <span>Feb 28, 2024</span><span>7:32 pm</span>
-                      </p>
+                <div class="subscriptionInputGroup">
+                  <input
+                    type="radio"
+                    name="subscriptionPlan"
+                    id="subscriptionPlanThreeMonths"
+                  />
+                  <label for="subscriptionPlanThreeMonths">
+                    <h5 class="planDuration"><span>3</span> Months</h5>
+                    <div class="planCostInfo">
+                      <p class="planCost">320 <span>SAR</span></p>
+                      <p class="costPrecentage">5 SAR / Day</p>
                     </div>
-                    <div class="boxStatus">Pay</div>
-                  </div>
-                  <div class="historyBox">
-                    <div class="boxInfo">
-                      <p class="boxCost">1000 <span>SAR</span></p>
-                      <p class="boxDate">
-                        <span>Feb 10, 2024</span><span>10:12 am</span>
-                      </p>
-                    </div>
-                    <div class="boxStatus">Add budget</div>
-                  </div>
-                  <div class="historyBox">
-                    <div class="boxInfo">
-                      <p class="boxCost">1000 <span>SAR</span></p>
-                      <p class="boxDate">
-                        <span>Feb 10, 2024</span><span>10:12 am</span>
-                      </p>
-                    </div>
-                    <div class="boxStatus">Add budget</div>
-                  </div>
-                  <div class="historyBox">
-                    <div class="boxInfo">
-                      <p class="boxCost">1000 <span>SAR</span></p>
-                      <p class="boxDate">
-                        <span>Feb 10, 2024</span><span>10:12 am</span>
-                      </p>
-                    </div>
-                    <div class="boxStatus">Add budget</div>
-                  </div>
-                  <div class="historyBox pay">
-                    <div class="boxInfo">
-                      <p class="boxCost">400 <span>SAR</span></p>
-                      <p class="boxDate">
-                        <span>Feb 28, 2024</span><span>7:32 pm</span>
-                      </p>
-                    </div>
-                    <div class="boxStatus">Pay</div>
-                  </div>
+                  </label>
                 </div>
-              </div>
+                <div class="subscriptionInputGroup">
+                  <input
+                    type="radio"
+                    name="subscriptionPlan"
+                    id="subscriptionPlanSixMonths"
+                  />
+                  <label for="subscriptionPlanSixMonths">
+                    <h5 class="planDuration"><span>6</span> Months</h5>
+                    <div class="planCostInfo">
+                      <p class="planCost">550 <span>SAR</span></p>
+                      <p class="costPrecentage">3.05 SAR / Day</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="subscriptionInputGroup">
+                  <input
+                    type="radio"
+                    name="subscriptionPlan"
+                    id="subscriptionPlanOneYear"
+                  />
+                  <label for="subscriptionPlanOneYear">
+                    <h5 class="planDuration"><span>1</span> Year</h5>
+                    <div class="planCostInfo">
+                      <p class="planCost">800 <span>SAR</span></p>
+                      <p class="costPrecentage">2 SAR / Day</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="btnBox">
+                    <button type="submit" class="confirmBtn">Confirm</button>
+                </div>
+              </form>
             </div>
           </div>
         </main>

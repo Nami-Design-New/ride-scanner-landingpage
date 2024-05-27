@@ -26,315 +26,408 @@
   </head>
 
   <body>
-    <!-- header -->
-    <nav class="header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
+    <div class="dashboardPage">
+      <!-- Aside -->
+      <aside class="">
+        <div class="asideIcon">
+          <span class="iconBar"> </span><span class="iconBar"></span>
+          <span class="iconBar"></span>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link">
-              <a class="home active" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-link">
-              <a class="how-it-works" href="index.html#how-it-works"
-                >How it works</a
-              >
-            </li>
-            <li class="nav-link">
-              <a class="about" href="index.html#about">About Us</a>
-            </li>
-            <li class="nav-link">
-              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
-            </li>
-            <li class="nav-link">
-              <a href="careers.html">Careers</a>
-            </li>
-            <li class="nav-link">
-              <a href="register.html">Company Account</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns d-flex gap-3">
-          <button class="language btn">AR</button>
-          <button class="btn toogler">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <!-- main-wrapper -->
-    <main class="content">
-      <!-- careers form -->
-      <div class="banner">
-        <h1>Dashboard</h1>
-      </div>
-
-      <div class="contentBody">
-        <div class="container bodyContainer">
-          <div class="statisticsCardsContainer">
-            <div class="card statisticsCard">
-              <h5 class="cardHeading">Total income</h5>
-              <div class="cardContent">
-                <div class="value">500K</div>
-                <div class="status">
-                  <span class="statusValue lose">3.9% </span>
-                  <span>based on last month</span>
-                </div>
-              </div>
-            </div>
-            <div class="card statisticsCard">
-              <h5 class="cardHeading">Orders count</h5>
-              <div class="cardContent">
-                <div class="value">220 orders</div>
-              </div>
-            </div>
-            <div class="card statisticsCard">
-              <h5 class="cardHeading">Cars count</h5>
-              <div class="cardContent">
-                <div class="value">35 Cars</div>
-              </div>
-            </div>
-            <div class="card statisticsCard">
-              <h5 class="cardHeading">Drivers count</h5>
-              <div class="cardContent">
-                <div class="value">50 Drivers</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="statisticsChartsContainer">
-            <div class="statisticsChartBox">
-              <div class="boxHeading">
-                <h4 class="headingTitle">Total net income</h4>
-                <h5 class="">112</h5>
-              </div>
-              <div
-                class="apex-charts statisticsChart"
-                id="simple_dount_chart"
-                data-colors='["#f6c77d", "#90be6d", "#f8961e"]'
-                dir="ltr"
-              ></div>
-            </div>
-            <div class="statisticsChartBox">
-              <div class="boxHeading">
-                <h4 class="headingTitle">Total payment</h4>
-                <h5 class="">2000</h5>
-              </div>
-              <div
-                class="apex-charts statisticsChart"
-                id="line_chart_datalabel"
-                data-colors='["#16a34a", "#f6c77d"]'
-                dir="ltr"
-              ></div>
-            </div>
-          </div>
-
-          <div class="latestOrdersSection">
-            <div class="latestOrdersHeading">
-              <h2>Latest Orders</h2>
-              <a href="orders.html">View All</a>
-            </div>
-            <div class="latestOrdersContainer">
-              <div class="orderBox">
-                <div class="orderHeading">
-                  <div class="orderUser">
-                    <figure>
-                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
-                    </figure>
-                    <p class="userName">Mohamed Ahmed</p>
-                  </div>
-                  <span class="orderStatus">Pending</span>
-                </div>
-                <div class="orderContent">
-                  <div class="orderPath">
-                    <div class="pathIcons">
-                      <div class="iconBox iconFrom">
-                        <img
-                          src="assets/imgs/dot-and-circle.png"
-                          alt="location"
-                        />
-                      </div>
-                      <span class="pathLine"></span>
-                      <div class="iconBox iconTo">
-                        <img
-                          src="assets/imgs/location-pin.png"
-                          alt="location"
-                        />
-                      </div>
-                    </div>
-                    <div class="pathContent">
-                      <div class="pathBox from">Riyadh, Al Zahrah</div>
-                      <div class="pathBox to">Riyadh, Al Zahrah</div>
-                    </div>
-                  </div>
-
-                  <div class="orderCost">
-                    <p class="costTitle">Price:</p>
-                    <p class="costValue">200 <span>SAR</span></p>
-                  </div>
-
-                  <span class="orderDate"> 12/11/2023 </span>
-                </div>
-              </div>
-
-              <div class="orderBox">
-                <div class="orderHeading">
-                  <div class="orderUser">
-                    <figure>
-                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
-                    </figure>
-                    <p class="userName">Mohamed Ahmed</p>
-                  </div>
-                  <span class="orderStatus completed">Completed</span>
-                </div>
-                <div class="orderContent">
-                  <div class="orderPath">
-                    <div class="pathIcons">
-                      <div class="iconBox iconFrom">
-                        <img
-                          src="assets/imgs/dot-and-circle.png"
-                          alt="location"
-                        />
-                      </div>
-                      <span class="pathLine"></span>
-                      <div class="iconBox iconTo">
-                        <img
-                          src="assets/imgs/location-pin.png"
-                          alt="location"
-                        />
-                      </div>
-                    </div>
-                    <div class="pathContent">
-                      <div class="pathBox from">Riyadh, Al Zahrah</div>
-                      <div class="pathBox to">Riyadh, Al Zahrah</div>
-                    </div>
-                  </div>
-
-                  <div class="orderCost">
-                    <p class="costTitle">Price:</p>
-                    <p class="costValue">200 <span>SAR</span></p>
-                  </div>
-
-                  <span class="orderDate"> 12/11/2023 </span>
-                </div>
-              </div>
-
-              <div class="orderBox">
-                <div class="orderHeading">
-                  <div class="orderUser">
-                    <figure>
-                      <img src="assets/imgs/avatar.webp" alt="user avatar" />
-                    </figure>
-                    <p class="userName">Mohamed Ahmed</p>
-                  </div>
-                  <span class="orderStatus canceled">Canceled</span>
-                </div>
-                <div class="orderContent">
-                  <div class="orderPath">
-                    <div class="pathIcons">
-                      <div class="iconBox iconFrom">
-                        <img
-                          src="assets/imgs/dot-and-circle.png"
-                          alt="location"
-                        />
-                      </div>
-                      <span class="pathLine"></span>
-                      <div class="iconBox iconTo">
-                        <img
-                          src="assets/imgs/location-pin.png"
-                          alt="location"
-                        />
-                      </div>
-                    </div>
-                    <div class="pathContent">
-                      <div class="pathBox from">Riyadh, Al Zahrah</div>
-                      <div class="pathBox to">Riyadh, Al Zahrah</div>
-                    </div>
-                  </div>
-
-                  <div class="orderCost">
-                    <p class="costTitle">Price:</p>
-                    <p class="costValue">200 <span>SAR</span></p>
-                  </div>
-
-                  <span class="orderDate"> 12/11/2023 </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carsMapContainer">
-            <h2>Cars Map</h2>
-            <div id="dashboardMap"></div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14903546.801014509!2d45.0741!3d24.222141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1659632180387!5m2!1sar!2seg"
-              width="100%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
-          >
-            <a class="logo" href="index.html">
-              <img src="assets/imgs/logo.svg" alt="logo" />
+        <a class="asideLogo" href="index.html">
+          <img
+            src="assets/imgs/logo-icon.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoIcon"
+          />
+          <img
+            src="assets/imgs/logo-title.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoTitle"
+          />
+        </a>
+        <ul class="asideNav">
+          <li class="navItem active">
+            <a href="dashboard.html" class="navLink">
+              <img
+                src="assets/imgs/dashboard-icon.svg"
+                alt="Dashboard"
+                title="Dashboard"
+              />
+              <p>Dashboard</p>
             </a>
-            <div class="copy d-flex gap-1">
-              <p>Copyright © 2023 Ride Scanner -</p>
-              <a href="privacy-policy.html">Privacy & Policy</a>
-            </div>
-            <ul class="social">
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="navItem">
+            <a href="drivers.html" class="navLink">
+              <img src="assets/imgs/driver.png" alt="Drivers" title="Drivers" />
+              <p>Drivers</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="cars.html" class="navLink">
+              <img src="assets/imgs/car.png" alt="Cars" title="Cars" />
+              <p>Cars</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="orders.html" class="navLink">
+              <img src="assets/imgs/orders.png" alt="Orders" title="Orders" />
+              <p>Orders</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="wallet.html" class="navLink">
+              <img src="assets/imgs/wallet.png" alt="Wallet" title="Wallet" />
+              <p>Wallet</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="subscription.html" class="navLink">
+              <img
+                src="assets/imgs/subscription.png"
+                alt="Subscription"
+                title="Subscription"
+              />
+              <p>Subscription</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="login.html" class="navLink">
+              <img
+                src="assets/imgs/logout-icon.svg"
+                alt="Log out"
+                title="Log out"
+              />
+              <p>Log Out</p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <!-- Start Main & Footer -->
+      <div class="mainAndFooterWrapper">
+        <!-- main-wrapper -->
+        <main class="content">
+          <!-- careers form -->
+          <div class="banner">
+            <h1>Dashboard</h1>
           </div>
-        </div>
+
+          <div class="contentBody">
+            <div class="container bodyContainer">
+              <div class="statisticsCardsContainer">
+                <div class="card statisticsCard">
+                  <h5 class="cardHeading">Total income</h5>
+                  <div class="cardContent">
+                    <div class="value">500K</div>
+                    <div class="status">
+                      <span class="statusValue lose">3.9% </span>
+                      <span>based on last month</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="card statisticsCard" href="orders.html">
+                  <h5 class="cardHeading">Orders count</h5>
+                  <div class="cardContent">
+                    <div class="value">220 orders</div>
+                  </div>
+                </a>
+                <a class="card statisticsCard" href="cars.html">
+                  <h5 class="cardHeading">Cars count</h5>
+                  <div class="cardContent">
+                    <div class="value">35 Cars</div>
+                  </div>
+                </a>
+                <a class="card statisticsCard" href="drivers.html">
+                  <h5 class="cardHeading">Drivers count</h5>
+                  <div class="cardContent">
+                    <div class="value">50 Drivers</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="statisticsChartsContainer">
+                <div class="statisticsChartBox">
+                  <div class="boxHeading">
+                    <h4 class="headingTitle">Total net income</h4>
+                    <h5 class="">112</h5>
+                  </div>
+                  <div
+                    class="apex-charts statisticsChart"
+                    id="simple_dount_chart"
+                    data-colors='["#f6c77d", "#90be6d", "#f8961e"]'
+                    dir="ltr"
+                  ></div>
+                </div>
+                <div class="statisticsChartBox">
+                  <div class="boxHeading">
+                    <h4 class="headingTitle">Total payment</h4>
+                    <h5 class="">2000</h5>
+                  </div>
+                  <div
+                    class="apex-charts statisticsChart"
+                    id="line_chart_datalabel"
+                    data-colors='["#16a34a", "#f6c77d"]'
+                    dir="ltr"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="latestOrdersSection">
+                <div class="latestOrdersHeading">
+                  <h2>Latest Orders</h2>
+                  <a href="orders.html">View All</a>
+                </div>
+                <div class="latestOrdersContainer">
+                  <div class="orderBox">
+                    <div class="orderHeading">
+                      <div class="orderUser">
+                        <figure>
+                          <img
+                            src="assets/imgs/avatar.webp"
+                            alt="user avatar"
+                          />
+                        </figure>
+                        <p class="userName">Mohamed Ahmed</p>
+                      </div>
+                      <span class="orderStatus">Pending</span>
+                    </div>
+                    <div class="orderContent">
+                      <div class="orderPath">
+                        <div class="pathIcons">
+                          <div class="iconBox iconFrom">
+                            <img
+                              src="assets/imgs/dot-and-circle.png"
+                              alt="location"
+                            />
+                          </div>
+                          <span class="pathLine"></span>
+                          <div class="iconBox iconTo">
+                            <img
+                              src="assets/imgs/location-pin.png"
+                              alt="location"
+                            />
+                          </div>
+                        </div>
+                        <div class="pathContent">
+                          <div class="pathBox from">Riyadh, Al Zahrah</div>
+                          <div class="pathBox to">Riyadh, Al Zahrah</div>
+                        </div>
+                      </div>
+
+                      <div class="orderCost">
+                        <p class="costTitle">Price:</p>
+                        <p class="costValue">200 <span>SAR</span></p>
+                      </div>
+
+                      <span class="orderDate"> 12/11/2023 </span>
+                    </div>
+                  </div>
+
+                  <div class="orderBox">
+                    <div class="orderHeading">
+                      <div class="orderUser">
+                        <figure>
+                          <img
+                            src="assets/imgs/avatar.webp"
+                            alt="user avatar"
+                          />
+                        </figure>
+                        <p class="userName">Mohamed Ahmed</p>
+                      </div>
+                      <span class="orderStatus completed">Completed</span>
+                    </div>
+                    <div class="orderContent">
+                      <div class="orderPath">
+                        <div class="pathIcons">
+                          <div class="iconBox iconFrom">
+                            <img
+                              src="assets/imgs/dot-and-circle.png"
+                              alt="location"
+                            />
+                          </div>
+                          <span class="pathLine"></span>
+                          <div class="iconBox iconTo">
+                            <img
+                              src="assets/imgs/location-pin.png"
+                              alt="location"
+                            />
+                          </div>
+                        </div>
+                        <div class="pathContent">
+                          <div class="pathBox from">Riyadh, Al Zahrah</div>
+                          <div class="pathBox to">Riyadh, Al Zahrah</div>
+                        </div>
+                      </div>
+
+                      <div class="orderCost">
+                        <p class="costTitle">Price:</p>
+                        <p class="costValue">200 <span>SAR</span></p>
+                      </div>
+
+                      <span class="orderDate"> 12/11/2023 </span>
+                    </div>
+                  </div>
+
+                  <div class="orderBox">
+                    <div class="orderHeading">
+                      <div class="orderUser">
+                        <figure>
+                          <img
+                            src="assets/imgs/avatar.webp"
+                            alt="user avatar"
+                          />
+                        </figure>
+                        <p class="userName">Mohamed Ahmed</p>
+                      </div>
+                      <span class="orderStatus canceled">Canceled</span>
+                    </div>
+                    <div class="orderContent">
+                      <div class="orderPath">
+                        <div class="pathIcons">
+                          <div class="iconBox iconFrom">
+                            <img
+                              src="assets/imgs/dot-and-circle.png"
+                              alt="location"
+                            />
+                          </div>
+                          <span class="pathLine"></span>
+                          <div class="iconBox iconTo">
+                            <img
+                              src="assets/imgs/location-pin.png"
+                              alt="location"
+                            />
+                          </div>
+                        </div>
+                        <div class="pathContent">
+                          <div class="pathBox from">Riyadh, Al Zahrah</div>
+                          <div class="pathBox to">Riyadh, Al Zahrah</div>
+                        </div>
+                      </div>
+
+                      <div class="orderCost">
+                        <p class="costTitle">Price:</p>
+                        <p class="costValue">200 <span>SAR</span></p>
+                      </div>
+
+                      <span class="orderDate"> 12/11/2023 </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carsMapContainer">
+                <h2>Cars Map</h2>
+                <div id="dashboardMap" style="height: 500px; width: 100%"></div>
+                <!-- <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14903546.801014509!2d45.0741!3d24.222141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1659632180387!5m2!1sar!2seg"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe> -->
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+              >
+                <a class="logo" href="index.html">
+                  <img src="assets/imgs/logo.svg" alt="logo" />
+                </a>
+                <div class="copy d-flex gap-1">
+                  <p>Copyright © 2023 Ride Scanner -</p>
+                  <a href="privacy-policy.html">Privacy & Policy</a>
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
   </body>
   <!-- apexcharts -->
   <script src="assets/js/apexcharts.min.js"></script>
   <!-- Include the Google Maps JavaScript API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiiiXzfLnQwi1pZgp5pCca64kqwKteowk&callback=initMap"
+    async
+    defer
+  ></script>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filepond.min.js"></script>
   <script src="assets/js/app.js"></script>
+
   <script>
     $(document).ready(function () {
       $(".filepond-multiple").filepond({
         allowMultiple: true,
       });
     });
+  </script>
+
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 24.7136, lng: 46.6753 }, // Coordinates of Riyadh, Saudi Arabia
+        zoom: 8,
+      });
+
+      var marker = new google.maps.Marker({
+        position: { lat: 24.7136, lng: 46.6753 }, // Coordinates of Riyadh, Saudi Arabia
+        map: map,
+        title: "Riyadh",
+      });
+
+      // Add more markers for other cities
+      var cities = [
+        { lat: 21.4225, lng: 39.8262, title: "Mecca" },
+        { lat: 21.4858, lng: 39.1925, title: "Jeddah" },
+        { lat: 24.6877, lng: 46.7219, title: "Riyadh" },
+        // Add more cities here
+      ];
+
+      cities.forEach(function (city) {
+        new google.maps.Marker({
+          position: { lat: city.lat, lng: city.lng },
+          map: map,
+          title: city.title,
+        });
+      });
+    }
+
+    // Load the map when the page has finished loading
+    window.onload = initMap;
   </script>
 </html>

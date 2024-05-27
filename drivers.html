@@ -14,103 +14,997 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/filepond.min.css" />
     <link rel="stylesheet" href="assets/css/styleEn.css" />
+    <!-- data tables -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css"
+    />
   </head>
 
   <body>
-    <!-- header -->
-    <nav class="header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
+    <div class="dashboardPage driversPage">
+      <!-- Aside -->
+      <aside class="">
+        <div class="asideIcon">
+          <span class="iconBar"> </span><span class="iconBar"></span>
+          <span class="iconBar"></span>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link">
-              <a class="home active" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-link">
-              <a class="how-it-works" href="index.html#how-it-works"
-                >How it works</a
-              >
-            </li>
-            <li class="nav-link">
-              <a class="about" href="index.html#about">About Us</a>
-            </li>
-            <li class="nav-link">
-              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
-            </li>
-            <li class="nav-link">
-              <a href="careers.html">Careers</a>
-            </li>
-            <li class="nav-link">
-              <a href="register.html">Company Account</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns d-flex gap-3">
-          <button class="language btn">AR</button>
-          <button class="btn toogler">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <!-- main-wrapper -->
-    <main class="content">
-      <!-- careers form -->
-      <div class="banner">
-        <h1>Drivers</h1>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
-          >
-            <a class="logo" href="index.html">
-              <img src="assets/imgs/logo.svg" alt="logo" />
+        <a class="asideLogo" href="index.html">
+          <img
+            src="assets/imgs/logo-icon.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoIcon"
+          />
+          <img
+            src="assets/imgs/logo-title.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoTitle"
+          />
+        </a>
+        <ul class="asideNav">
+          <li class="navItem">
+            <a href="dashboard.html" class="navLink">
+              <img
+                src="assets/imgs/dashboard-icon.svg"
+                alt="Dashboard"
+                title="Dashboard"
+              />
+              <p>Dashboard</p>
             </a>
-            <div class="copy d-flex gap-1">
-              <p>Copyright © 2023 Ride Scanner -</p>
-              <a href="privacy-policy.html">Privacy & Policy</a>
-            </div>
-            <ul class="social">
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="navItem active">
+            <a href="drivers.html" class="navLink">
+              <img src="assets/imgs/driver.png" alt="Drivers" title="Drivers" />
+              <p>Drivers</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="cars.html" class="navLink">
+              <img src="assets/imgs/car.png" alt="Cars" title="Cars" />
+              <p>Cars</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="orders.html" class="navLink">
+              <img src="assets/imgs/orders.png" alt="Orders" title="Orders" />
+              <p>Orders</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="wallet.html" class="navLink">
+              <img src="assets/imgs/wallet.png" alt="Wallet" title="Wallet" />
+              <p>Wallet</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="subscription.html" class="navLink">
+              <img
+                src="assets/imgs/subscription.png"
+                alt="Subscription"
+                title="Subscription"
+              />
+              <p>Subscription</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="login.html" class="navLink">
+              <img
+                src="assets/imgs/logout-icon.svg"
+                alt="Log out"
+                title="Log out"
+              />
+              <p>Log Out</p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <!-- Start Main & Footer -->
+      <div class="mainAndFooterWrapper">
+        <!-- main-wrapper -->
+        <main class="content">
+          <div class="banner">
+            <h1>Drivers</h1>
           </div>
-        </div>
+
+          <div class="contentBody">
+            <div class="tableContainer">
+              <div class="tableHeading">
+                <span class="addBtn">Add Driver</span>
+              </div>
+              <table class="table" id="ordersTable">
+                <thead>
+                  <tr>
+                    <th data-ordering="false">Driver Name</th>
+                    <th data-ordering="false">License Image</th>
+                    <th data-ordering="false">Entry PIN</th>
+                    <th data-ordering="false">Operations</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/license-img.jpg"
+                        alt="license image"
+                        class="img"
+                      />
+                    </td>
+                    <td>123456789</td>
+                    <td>
+                      <div class="operationsBtns">
+                        <span class="tableBtn editBtn">
+                          <img
+                            src="assets/imgs/edit-icon.svg"
+                            alt="edit driver"
+                          />
+                        </span>
+                        <span class="tableBtn deleteBtn">
+                          <img
+                            src="assets/imgs/trash-icon.svg"
+                            alt="delete driver"
+                          />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+              >
+                <a class="logo" href="index.html">
+                  <img src="assets/imgs/logo.svg" alt="logo" />
+                </a>
+                <div class="copy d-flex gap-1">
+                  <p>Copyright © 2023 Ride Scanner -</p>
+                  <a href="privacy-policy.html">Privacy & Policy</a>
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modalSection">
+      <div class="modalBox">
+        <div class="modalHeading">
+          <h6 class="modalLabel">Add Driver</h6>
+          <span class="closeBtnBox">
+            <img
+              src="assets/imgs/x-icon.svg"
+              alt="close modal"
+              title="close modal"
+            />
+          </span>
+        </div>
+        <form class="modalForm">
+          <div class="formBody">
+            <div class="inputGroup">
+              <label for="driverNameInput">Name</label>
+              <input
+                type="text"
+                name="driverName"
+                id="driverNameInput"
+                placeholder="Driver full name"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="driverLiccenseImgInput">License Image</label>
+              <input
+                type="file"
+                name="driverLiccenseImg"
+                id="driverLiccenseImgInput"
+                class="filepond-multiple"
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="driverPINInput">Entry PIN</label>
+              <input
+                type="Number"
+                name="driverPIN"
+                id="driverPINInput"
+                placeholder="1234567"
+              />
+            </div>
+            <div class="btnsBox">
+              <span class="btn">Add</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
+
+  <!-- jquery  -->
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filepond.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <!-- Data Tables -->
+  <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
   <script>
     $(document).ready(function () {
       $(".filepond-multiple").filepond({
         allowMultiple: true,
       });
     });
+
+    $(".table").DataTable({
+      responsive: true,
+    });
+
+    // Modal Operations
+    const modal = document.querySelector(`.modalSection`);
+    const modalBody = document.querySelector(`.modalSection .modalBox`);
+    const modalCloseBtn = document.querySelector(
+      `.modalSection .modalBox .modalHeading .closeBtnBox`
+    );
+    const addBtn = document.querySelector(
+      `.content .contentBody .tableContainer .tableHeading .addBtn`
+    );
+    // close the modal when clicking the close button
+    modalCloseBtn?.addEventListener("click", function () {
+      modal?.classList.remove("open");
+    });
+    // open the modal for adding new association
+    addBtn?.addEventListener("click", function () {
+      modal?.classList.add("open");
+    });
+    // Close the modal when clicking outside its body
+    document.addEventListener(
+      "click",
+      function (e) {
+        if (
+          !modalBody?.contains(e.target) &&
+          modal?.classList.contains("open")
+        ) {
+          modal?.classList.remove("open");
+        }
+      },
+      true
+    );
   </script>
 </html>

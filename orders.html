@@ -26,349 +26,489 @@
   </head>
 
   <body>
-    <!-- header -->
-    <nav class="header">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="index.html"><img src="assets/imgs/logo.svg" /></a>
+    <div class="dashboardPage ordersPage">
+      <!-- Aside -->
+      <aside class="">
+        <div class="asideIcon">
+          <span class="iconBar"> </span><span class="iconBar"></span>
+          <span class="iconBar"></span>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link">
-              <a class="home active" href="index.html#home">Home</a>
-            </li>
-            <li class="nav-link">
-              <a class="how-it-works" href="index.html#how-it-works"
-                >How it works</a
-              >
-            </li>
-            <li class="nav-link">
-              <a class="about" href="index.html#about">About Us</a>
-            </li>
-            <li class="nav-link">
-              <a class="contact-us" href="index.html#contact-us">Contact Us</a>
-            </li>
-            <li class="nav-link">
-              <a href="careers.html">Careers</a>
-            </li>
-            <li class="nav-link">
-              <a href="register.html">Company Account</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btns d-flex gap-3">
-          <button class="language btn">AR</button>
-          <button class="btn toogler">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <!-- main-wrapper -->
-    <main class="content">
-      <div class="banner">
-        <h1>Orders</h1>
-      </div>
-
-      <div class="contentBody">
-        <div class="tableContainer">
-          <table class="table" id="ordersTable">
-            <thead>
-              <tr>
-                <th data-ordering="false">Client Name</th>
-                <th data-ordering="false">Avatar</th>
-                <th data-ordering="false">From</th>
-                <th data-ordering="false">To</th>
-                <th data-ordering="false">Cost</th>
-                <th data-ordering="false">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-              <tr>
-                <td>Mohamed Ahmed</td>
-                <td>
-                  <img src="assets/imgs/avatar.webp" alt="client avatar" />
-                </td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>Riyadh, Al Zahrah</td>
-                <td>200 SAR</td>
-                <td>Completed</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </main>
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
-          >
-            <a class="logo" href="index.html">
-              <img src="assets/imgs/logo.svg" alt="logo" />
+        <a class="asideLogo" href="index.html">
+          <img
+            src="assets/imgs/logo-icon.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoIcon"
+          />
+          <img
+            src="assets/imgs/logo-title.svg"
+            alt="Ride Scanner"
+            title="Ride Scanner"
+            class="logoTitle"
+          />
+        </a>
+        <ul class="asideNav">
+          <li class="navItem">
+            <a href="dashboard.html" class="navLink">
+              <img
+                src="assets/imgs/dashboard-icon.svg"
+                alt="Dashboard"
+                title="Dashboard"
+              />
+              <p>Dashboard</p>
             </a>
-            <div class="copy d-flex gap-1">
-              <p>Copyright © 2023 Ride Scanner -</p>
-              <a href="privacy-policy.html">Privacy & Policy</a>
-            </div>
-            <ul class="social">
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="navItem">
+            <a href="drivers.html" class="navLink">
+              <img src="assets/imgs/driver.png" alt="Drivers" title="Drivers" />
+              <p>Drivers</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="cars.html" class="navLink">
+              <img src="assets/imgs/car.png" alt="Cars" title="Cars" />
+              <p>Cars</p>
+            </a>
+          </li>
+          <li class="navItem active">
+            <a href="orders.html" class="navLink">
+              <img src="assets/imgs/orders.png" alt="Orders" title="Orders" />
+              <p>Orders</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="wallet.html" class="navLink">
+              <img src="assets/imgs/wallet.png" alt="Wallet" title="Wallet" />
+              <p>Wallet</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="subscription.html" class="navLink">
+              <img
+                src="assets/imgs/subscription.png"
+                alt="Subscription"
+                title="Subscription"
+              />
+              <p>Subscription</p>
+            </a>
+          </li>
+          <li class="navItem">
+            <a href="login.html" class="navLink">
+              <img
+                src="assets/imgs/logout-icon.svg"
+                alt="Log out"
+                title="Log out"
+              />
+              <p>Log Out</p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <!-- main-wrapper -->
+      <div class="mainAndFooterWrapper">
+        <main class="content">
+          <div class="banner">
+            <h1>Orders</h1>
           </div>
-        </div>
+
+          <div class="contentBody">
+            <div class="tableContainer">
+              <table class="table" id="ordersTable">
+                <thead>
+                  <tr>
+                    <th data-ordering="false">Client Name</th>
+                    <th data-ordering="false">Avatar</th>
+                    <th data-ordering="false">From</th>
+                    <th data-ordering="false">To</th>
+                    <th data-ordering="false">Cost</th>
+                    <th data-ordering="false">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Mohamed Ahmed</td>
+                    <td>
+                      <img
+                        src="assets/imgs/avatar.webp"
+                        alt="client avatar"
+                        class="avatarImg"
+                      />
+                    </td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>Riyadh, Al Zahrah</td>
+                    <td>200 SAR</td>
+                    <td>Completed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-12 flex-lg-row flex-column d-flex justify-content-between align-items-center footer"
+              >
+                <a class="logo" href="index.html">
+                  <img src="assets/imgs/logo.svg" alt="logo" />
+                </a>
+                <div class="copy d-flex gap-1">
+                  <p>Copyright © 2023 Ride Scanner -</p>
+                  <a href="privacy-policy.html">Privacy & Policy</a>
+                </div>
+                <ul class="social">
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
   </body>
 
   <!-- jquery  -->
@@ -387,9 +527,8 @@
       });
     });
 
-    $('.table').DataTable({
-      responsive: true
+    $(".table").DataTable({
+      responsive: true,
     });
-
   </script>
 </html>
