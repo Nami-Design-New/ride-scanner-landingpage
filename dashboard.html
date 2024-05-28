@@ -15,6 +15,9 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/imgs/fav.svg" />
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="assets/css/style-1.css" id="main-style-link" />
+    <link rel="stylesheet" href="assets/css/style-preset-1.css" />
     <!-- required css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
@@ -114,35 +117,71 @@
 
           <div class="contentBody">
             <div class="container bodyContainer">
-              <div class="statisticsCardsContainer">
-                <div class="card statisticsCard">
-                  <h5 class="cardHeading">Total income</h5>
-                  <div class="cardContent">
-                    <div class="value">500K</div>
-                    <div class="status">
-                      <span class="statusValue lose">3.9% </span>
-                      <span>based on last month</span>
+              <div class="statisticsCardsContainer row">
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex align-items-center justify-content-between py-3"
+                    >
+                      <h5>Total income</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex align-items-end mb-3">
+                        <h4 class="mb-0">205K</h4>
+                        <span class="badge bg-light-success ms-2">20%</span>
+                      </div>
+                      <p class="text-muted mb-0">Monthly Increase</p>
                     </div>
                   </div>
                 </div>
-                <a class="card statisticsCard" href="orders.html">
-                  <h5 class="cardHeading">Orders count</h5>
-                  <div class="cardContent">
-                    <div class="value">220 orders</div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex align-items-center justify-content-between py-3"
+                    >
+                      <h5>Orders count</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex align-items-end mb-3">
+                        <h4 class="mb-0">467</h4>
+                        <span class="badge bg-light-warning ms-2">10%</span>
+                      </div>
+                      <p class="text-muted mb-0">Weekly Increase</p>
+                    </div>
                   </div>
-                </a>
-                <a class="card statisticsCard" href="cars.html">
-                  <h5 class="cardHeading">Cars count</h5>
-                  <div class="cardContent">
-                    <div class="value">35 Cars</div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex align-items-center justify-content-between py-3"
+                    >
+                      <h5>Cars count</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex align-items-end mb-3">
+                        <h4 class="mb-0">30</h4>
+                        <span class="badge bg-light-primary ms-2">50%</span>
+                      </div>
+                      <p class="text-muted mb-0">Yearly Increase</p>
+                    </div>
                   </div>
-                </a>
-                <a class="card statisticsCard" href="drivers.html">
-                  <h5 class="cardHeading">Drivers count</h5>
-                  <div class="cardContent">
-                    <div class="value">50 Drivers</div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex align-items-center justify-content-between py-3"
+                    >
+                      <h5>Drivers count</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex align-items-end mb-3">
+                        <h4 class="mb-0">50</h4>
+                        <span class="badge bg-light-primary ms-2">30%</span>
+                      </div>
+                      <p class="text-muted mb-0">Yearly Increase</p>
+                    </div>
                   </div>
-                </a>
+                </div>
               </div>
 
               <div class="statisticsChartsContainer">
