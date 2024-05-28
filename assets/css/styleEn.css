@@ -152,6 +152,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .container .nav-links ul .nav-link:hover .submenu {
+  display: flex;
 }
 .header .container .nav-links ul .nav-link.open .submenu {
   display: flex;
@@ -200,6 +208,11 @@ a {
   height: -moz-fit-content;
   height: fit-content;
   min-width: 200px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .header .container .btns .language {
   border-radius: 8px;
@@ -1023,7 +1036,7 @@ a {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 0 2px 1px #555;
+  box-shadow: 0 0 2px 1px #777;
   cursor: pointer;
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard .cardheading {
@@ -1078,6 +1091,7 @@ a {
   flex-direction: column;
   gap: 24px;
   position: relative;
+  padding: 16px;
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersHeading {
   width: 100%;
@@ -1099,7 +1113,7 @@ a {
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox {
   min-width: 300px;
-  padding: 20px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
@@ -1110,21 +1124,22 @@ a {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  box-shadow: 0 0 2px 1px #777;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderUser {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser {
   flex: 1 0 0;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderUser figure {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser figure {
   width: 40px;
   height: 40px;
   margin: 0;
@@ -1136,23 +1151,23 @@ a {
   -o-border-radius: 50%;
   overflow: hidden;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderUser figure img {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser figure img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderUser .userName {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser .userName {
   font-weight: 600;
   margin: 0;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderStatus {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus {
   color: #858585;
   font-weight: 600;
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderStatus.completed {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus.completed {
   color: rgb(10, 117, 10);
 }
-.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox boxDate .orderHeading .orderStatus.canceled {
+.content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderStatus.canceled {
   color: rgb(226, 50, 50);
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent {
@@ -1244,6 +1259,7 @@ a {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  padding: 16px;
 }
 .content .contentBody .bodyContainer .carsMapContainer .dashboardMap {
   width: 100%;
@@ -1766,7 +1782,7 @@ footer .copy a img {
   position: relative;
 }
 .mainAndFooterWrapper .contentBody {
-  padding: 24px !important;
+  padding: 24px 0 !important;
 }
 .mainAndFooterWrapper footer {
   padding: 40px 24px;
