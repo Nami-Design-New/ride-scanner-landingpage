@@ -1267,11 +1267,15 @@ a {
     }
     .tableContainer {
       width: 100%;
-      padding: 0 24px;
+      padding: 0 16px;
       position: relative;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @media (max-width: 768px) {
+        padding: 0 8px;
+      }
 
       .tableHeading {
         width: 100%;
@@ -2052,6 +2056,10 @@ aside {
   gap: 16px;
   padding: 16px;
   position: relative;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
 
   .subscriptionInputGroup {
     label {

@@ -99,7 +99,7 @@
                 alt="Log out"
                 title="Log out"
               />
-              <p>Log Out</p>
+              <p>Log out</p>
             </a>
           </li>
         </ul>
@@ -1238,6 +1238,7 @@
     });
     linkCarBtns?.forEach((btn) => {
       btn?.addEventListener("click", function () {
+        console.log("clicked");
         driversModal?.classList.add("open");
       });
     });

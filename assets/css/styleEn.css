@@ -1266,11 +1266,16 @@ a {
 }
 .content .contentBody .tableContainer {
   width: 100%;
-  padding: 0 24px;
+  padding: 0 16px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .content .contentBody .tableContainer {
+    padding: 0 8px;
+  }
 }
 .content .contentBody .tableContainer .tableHeading {
   width: 100%;
@@ -2099,6 +2104,11 @@ aside .asideNav .navItem .submenu .submenuItem a {
   gap: 16px;
   padding: 16px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .subscriptionsContainer {
+    padding: 8px;
+  }
 }
 .subscriptionsContainer .subscriptionInputGroup label {
   color: #000;

@@ -174,7 +174,7 @@ createLineChart(
   ],
   380
 );
-
+// Toggle showing submenus
 const submenuLinks = document.querySelectorAll(
   `.header .container .nav-links ul .nav-link.submenulink`
 );
