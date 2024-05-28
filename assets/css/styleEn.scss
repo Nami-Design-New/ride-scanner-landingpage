@@ -155,7 +155,10 @@ a {
         display: flex;
         height: 100%;
         position: relative;
-        overflow-y: auto;
+
+        @media (max-width: 768px) {
+          overflow-y: auto;
+        }
         .nav-link {
           height: 100%;
           padding: 0 16px;

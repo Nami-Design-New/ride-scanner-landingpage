@@ -117,7 +117,11 @@ a {
   display: flex;
   height: 100%;
   position: relative;
-  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .header .container .nav-links ul {
+    overflow-y: auto;
+  }
 }
 .header .container .nav-links ul .nav-link {
   height: 100%;
