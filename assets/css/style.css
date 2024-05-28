@@ -1490,7 +1490,7 @@ footer .copy a img {
   justify-content: flex-end;
 }
 .table tbody td:last-of-type .operationsBtns .inputGroup label {
-  width: 80px;
+  width: 48px;
   background-color: rgb(16, 157, 212);
   position: relative;
   height: 24px;
