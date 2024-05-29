@@ -11,6 +11,7 @@ let started = false;
 function startCount(element) {
   let goal = element.dataset.goal;
   let count = setInterval(() => {
+    a;
     element.textContent++;
     if (element.textContent == goal) {
       clearInterval(count);
@@ -189,10 +190,18 @@ submenuLinks?.forEach((link) => {
 const aside = document.querySelector(`aside`);
 const asideIcon = document.querySelector(`aside .asideIcon`);
 const asideNav = document.querySelector(`aside .asideNav`);
+const restPageFromAside = document.querySelector(`.mainAndFooterWrapper`);
 
 asideIcon?.addEventListener("click", function () {
-  aside?.classList.toggle("shrink");
-  asideNav?.classList.toggle("open");
+  if (aside?.classList.contains("shrink")) {
+    aside?.classList.remove("shrink");
+    restPageFromAside?.classList.remove("grow");
+    asideNav?.classList.remove("open");
+  } else {
+    aside?.classList.add("shrink");
+    restPageFromAside?.classList.add("grow");
+    asideNav?.classList.add("open");
+  }
 });
 
 // Show the confirm btn when check one input
