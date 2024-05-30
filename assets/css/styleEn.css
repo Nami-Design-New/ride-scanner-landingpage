@@ -1030,6 +1030,7 @@ a {
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer {
   padding: 16px;
+  padding-top: 0 !important;
   width: 100%;
   display: flex;
   align-items: stretch;
@@ -1037,6 +1038,7 @@ a {
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer .card {
   box-shadow: none !important;
+  margin: 0 !important;
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard {
   min-width: 300px;
@@ -1088,6 +1090,7 @@ a {
 }
 .content .contentBody .bodyContainer .statisticsChartsContainer {
   padding: 16px;
+  padding-bottom: 0 !important;
   width: 100%;
   display: flex;
   gap: 40px;

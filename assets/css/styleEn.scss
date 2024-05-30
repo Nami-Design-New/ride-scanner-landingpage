@@ -1019,6 +1019,7 @@ a {
 
       .statisticsCardsContainer {
         padding: 16px;
+        padding-top: 0 !important;
         width: 100%;
         display: flex;
         align-items: stretch;
@@ -1026,6 +1027,7 @@ a {
 
         .card {
           box-shadow: none !important;
+          margin: 0 !important;
         }
 
         .statisticsCard {
@@ -1087,6 +1089,7 @@ a {
 
       .statisticsChartsContainer {
         padding: 16px;
+        padding-bottom: 0 !important;
         width: 100%;
         display: flex;
         gap: 40px;
