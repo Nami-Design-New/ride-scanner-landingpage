@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/filepond.min.css" />
-    <link rel="stylesheet" href="assets/css/styleEn.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -145,7 +145,7 @@
               </div>
 
               <div class="statisticsCardsContainer row">
-                <div class="col-sm-6 col-xl-4">
+                <div class="col-sm-6 col-xl-4 p-0 card-container">
                   <div class="card">
                     <div
                       class="card-header d-flex align-items-center justify-content-between py-3"
@@ -162,7 +162,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-xl-4">
+                <div class="col-sm-6 col-xl-4 p-0 card-container">
                   <div class="card">
                     <div
                       class="card-header d-flex align-items-center justify-content-between py-3"
@@ -179,7 +179,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-xl-4">
+                <div class="col-sm-6 col-xl-4 p-0 card-container">
                   <div class="card">
                     <div
                       class="card-header d-flex align-items-center justify-content-between py-3"
@@ -196,7 +196,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-xl-4">
+                <div class="col-sm-6 col-xl-4 p-0 card-container">
                   <div class="card">
                     <div
                       class="card-header d-flex align-items-center justify-content-between py-3"
@@ -360,16 +360,19 @@
 
               <div class="carsMapContainer">
                 <h2>Cars Map</h2>
-                <div id="dashboardMap" style="height: 500px; width: 100%"></div>
-                <!-- <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14903546.801014509!2d45.0741!3d24.222141999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1659632180387!5m2!1sar!2seg"
-                  width="100%"
-                  height="400"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe> -->
+                <div
+                  id="dashboardMap"
+                  style="
+                    height: 500px;
+                    width: 100%;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
+                    border: 1px solid #ececec;
+                  "
+                ></div>
               </div>
             </div>
           </div>

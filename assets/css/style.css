@@ -1003,10 +1003,19 @@ a {
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer {
   padding: 16px;
+  padding-top: 0 !important;
   width: 100%;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
+  gap: 16px;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .card-container {
+  flex: 1 0 0;
+}
+.content .contentBody .bodyContainer .statisticsCardsContainer .card {
+  box-shadow: none !important;
+  margin: 0 !important;
 }
 .content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard {
   min-width: 300px;
@@ -1058,10 +1067,10 @@ a {
 }
 .content .contentBody .bodyContainer .statisticsChartsContainer {
   padding: 16px;
+  padding-bottom: 0 !important;
   width: 100%;
   display: flex;
   gap: 40px;
-  align-items: center;
   flex-wrap: wrap;
 }
 .content .contentBody .bodyContainer .statisticsChartsContainer .statisticsChartBox {
@@ -1070,7 +1079,8 @@ a {
   flex-direction: column;
   gap: 24px;
   min-width: 300px;
-  box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
+  background: #fefefe;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.07);
   padding: 20px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -1110,14 +1120,14 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
-  gap: 40px;
+  gap: 20px;
   background-color: #fefefe;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 0 2px 1px #777;
+  border: 1px solid #ececec;
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading {
   width: 100%;
@@ -1130,7 +1140,7 @@ a {
   flex: 1 0 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderHeading .orderUser figure {
   width: 40px;
@@ -1168,7 +1178,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   position: relative;
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderPath {
@@ -1216,9 +1226,9 @@ a {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-  background-color: #efefef;
-  border: 1px solid #777;
-  color: #000000;
+  background-color: #f8f8f8;
+  border: 1px solid #ececec;
+  color: #614b79;
   font-weight: normal;
 }
 .content .contentBody .bodyContainer .latestOrdersSection .latestOrdersContainer .orderBox .orderContent .orderCost {
@@ -1245,6 +1255,8 @@ a {
   width: 100%;
   text-align: right;
   color: #858585;
+  font-size: 12px;
+  line-height: 12px;
 }
 .content .contentBody .bodyContainer .carsMapContainer {
   width: 100%;
@@ -1253,15 +1265,10 @@ a {
   gap: 20px;
   position: relative;
   padding: 16px;
-  box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
 }
 .content .contentBody .bodyContainer .carsMapContainer .dashboardMap {
   width: 100%;
+  overflow: hidden !important;
 }
 .content .contentBody .tableContainer {
   width: 100%;
@@ -2058,7 +2065,7 @@ aside {
   width: 274px;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
   display: flex;
   padding: 16px;
@@ -2242,7 +2249,6 @@ aside .asideNav .navItem .navLink p {
 }
 aside .asideNav .navItem .navLink img {
   width: 24px;
-  height: 24px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2487,4 +2493,33 @@ aside .asideNav .navItem .submenu .submenuItem a {
 }
 .subscriptionsContainer .btnBox .confirmBtn.show {
   display: flex;
+}
+
+.card-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-box-content h4 {
+  font-weight: 600;
+}
+.card-box-content .badge {
+  background: none;
+  display: flex;
+  padding: 0;
+  font-weight: normal !important;
+}
+
+.card-header {
+  padding: 12px;
+}
+.card-header h5 {
+  font-family: "Poppins", sans-serif;
+  color: #666b88 !important;
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+.card-body {
+  padding: 24px;
 }/*# sourceMappingURL=style.css.map */

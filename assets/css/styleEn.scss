@@ -1024,6 +1024,11 @@ a {
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
+        gap: 16px;
+
+        .card-container {
+          flex: 1 0 0;
+        }
 
         .card {
           box-shadow: none !important;
@@ -1146,14 +1151,14 @@ a {
             display: flex;
             flex-direction: column;
             flex: 1 0 0;
-            gap: 40px;
+            gap: 20px;
             background-color: #fefefe;
             border-radius: 10px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
-            box-shadow: 0 0 2px 1px #777;
+            border: 1px solid #ececec;
             .orderHeading {
               width: 100%;
               display: flex;
@@ -1165,7 +1170,7 @@ a {
                 flex: 1 0 0;
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 8px;
 
                 figure {
                   width: 40px;
@@ -1208,7 +1213,7 @@ a {
               width: 100%;
               display: flex;
               flex-direction: column;
-              gap: 16px;
+              gap: 8px;
               position: relative;
 
               .orderPath {
@@ -1259,9 +1264,9 @@ a {
                     -moz-border-radius: 16px;
                     -ms-border-radius: 16px;
                     -o-border-radius: 16px;
-                    background-color: #efefef;
-                    border: 1px solid #777;
-                    color: $black-color;
+                    background-color: #f8f8f8;
+                    border: 1px solid #ececec;
+                    color: $main-color;
                     font-weight: normal;
                   }
                 }
@@ -1296,6 +1301,8 @@ a {
                 width: 100%;
                 text-align: right;
                 color: $text-color;
+                font-size: 12px;
+                line-height: 12px;
               }
             }
           }
@@ -1309,14 +1316,9 @@ a {
         gap: 20px;
         position: relative;
         padding: 16px;
-        box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
-        border-radius: 16px;
-        -webkit-border-radius: 16px;
-        -moz-border-radius: 16px;
-        -ms-border-radius: 16px;
-        -o-border-radius: 16px;
         .dashboardMap {
           width: 100%;
+          overflow: hidden !important;
         }
       }
     }
