@@ -2081,7 +2081,7 @@ aside .asideNav .navItem .navLink p {
   margin: 0;
   color: #614b79;
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   white-space: wrap;
@@ -2089,7 +2089,6 @@ aside .asideNav .navItem .navLink p {
 }
 aside .asideNav .navItem .navLink img {
   width: 24px;
-  height: 24px;
   -o-object-fit: cover;
      object-fit: cover;
 }
