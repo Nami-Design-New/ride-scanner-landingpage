@@ -1035,6 +1035,9 @@ a {
   align-items: stretch;
   flex-wrap: wrap;
 }
+.content .contentBody .bodyContainer .statisticsCardsContainer .card {
+  box-shadow: none !important;
+}
 .content .contentBody .bodyContainer .statisticsCardsContainer .statisticsCard {
   min-width: 300px;
   padding: 20px;
@@ -1853,6 +1856,7 @@ footer .copy a img {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  background-color: #f7fafb;
 }
 @media (max-width: 768px) {
   .dashboardPage {
@@ -2323,4 +2327,28 @@ aside .asideNav .navItem .submenu .submenuItem a {
 }
 .subscriptionsContainer .btnBox .confirmBtn.show {
   display: flex;
+}
+
+.card-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card-box-content .badge {
+  background: none;
+  display: flex;
+  padding: 0;
+}
+
+.card-header {
+  padding: 12px;
+}
+.card-header h5 {
+  font-family: "Poppins", sans-serif;
+  color: #666b88 !important;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 24px;
 }/*# sourceMappingURL=styleEn.css.map */

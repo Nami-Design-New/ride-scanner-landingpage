@@ -2007,6 +2007,7 @@ footer .copy a img {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  background-color: #f7fafb;
 }
 @media (max-width: 768px) {
   .dashboardPage {

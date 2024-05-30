@@ -1024,6 +1024,10 @@ a {
         align-items: stretch;
         flex-wrap: wrap;
 
+        .card {
+          box-shadow: none !important;
+        }
+
         .statisticsCard {
           min-width: 300px;
           padding: 20px;
@@ -1879,6 +1883,7 @@ footer {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  background-color: #f7fafb;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -2378,4 +2383,27 @@ aside {
       }
     }
   }
+}
+.card-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .badge {
+    background: none;
+    display: flex;
+    padding: 0;
+  }
+}
+.card-header {
+  padding: 12px;
+  h5 {
+    font-family: "Poppins", sans-serif;
+    color: #666b88 !important;
+    font-weight: 500;
+  }
+}
+
+.card-body {
+  padding: 24px;
 }
