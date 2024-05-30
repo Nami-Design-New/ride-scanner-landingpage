@@ -1895,6 +1895,7 @@ footer {
   flex-direction: column;
   position: relative;
   padding-left: 274px;
+  flex: 1 0 0;
 
   @media (max-width: 768px) {
     padding-left: unset;
