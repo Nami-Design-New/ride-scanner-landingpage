@@ -2341,7 +2341,7 @@ aside .asideNav .navItem .submenu .submenuItem a {
   background: none;
   display: flex;
   padding: 0;
-  font-weight: 200 !important;
+  font-weight: normal !important;
 }
 
 .card-header {
